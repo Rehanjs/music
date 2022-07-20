@@ -1,0 +1,1052 @@
+@media (min-width: 701px) and (max-width: 800px) {
+  :root {
+    --Side_all_categories_font_size-: 1.05rem;
+    --Three_dots_font_size-: 1.05rem;
+  }
+  html {
+    font-size: 100%;
+  }
+  /*===================================
+          Hiding Navigation Bar For Pc  
+      ====================================*/
+  .Navigation_options_background {
+    display: none;
+  }
+  /*===================================
+                      Logo 
+      ====================================*/
+  .Logo_container {
+    max-width: 100px;
+    min-height: 60px;
+  }
+  .logo_div {
+    height: 60px;
+    width: 60px;
+  }
+  .logo_img {
+    width: 80px;
+  }
+  /*===================================
+                     Sign In 
+      ====================================*/
+  .sign_in {
+    height: 40px;
+    width: 149px;
+    margin-top: 20px;
+    margin-right: 0px;
+  }
+  .login {
+    width: 50px;
+  }
+  /*===================================
+                     Search Button
+      ====================================*/
+  .search_div {
+    height: 20px;
+    margin-right: 36px;
+    width: 20px;
+    position: static;
+  }
+  .Search_img img {
+    cursor: pointer;
+    height: 48px;
+  }
+
+  /*===================================
+                  Search Input Tag
+      ====================================*/
+  .seach_btn_input {
+    justify-content: center;
+    width: 100vw;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -340%);
+  }
+  .search_input {
+    width: 70vw;
+    position: relative;
+  }
+  .search_input::placeholder {
+    left: 75px;
+  }
+  /* .Search_tool_tip::after {
+      display: none;
+    }
+    .Search_tool_tip::before {
+      display: none;
+    } */
+  /*===================================
+                   Side Menu Icon
+      ====================================*/
+  .Side_menu_icon {
+    right: 90px;
+  }
+  /*===================================
+                   Side Bar
+      ====================================*/
+  .Side_bar_container {
+    width: 400px;
+  }
+  /*===================================
+                  Hero Section
+      ====================================*/
+  .hero_background {
+    flex-wrap: wrap;
+    height: max-content;
+    justify-content: center;
+  }
+  .main_heading {
+    height: 180px;
+    width: 100vw;
+    margin-top: 160px;
+  }
+
+  .listen_btn_div {
+    margin-top: 40px;
+  }
+  .Most_viewed_div {
+    width: 100vw;
+    justify-content: center;
+    margin-right: 0px;
+  }
+  .artist {
+    width: 322px;
+    height: 33px;
+  }
+  .most_viewed_box {
+    height: 415px;
+    width: 68vw;
+    margin-right: 15px;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  /*===================================
+               Plan Compaison Boxes
+      ====================================*/
+  .Plans_div {
+    flex-wrap: nowrap;
+  }
+  .Plans_container {
+    margin-top: 100px;
+  }
+  .Plans_comparison_Box {
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+  }
+  .Standard_plan_box,
+  .Premium_plan_box {
+    margin-top: 0;
+    width: 30vw !important;
+  }
+  .Basic_plan_box {
+    width: 30vw !important;
+  }
+  .Three_plans:hover {
+    margin-top: 0px;
+  }
+  .Three_plans {
+    width: 300px;
+  }
+  /*===================================
+              Songs Categories
+      ====================================*/
+  .songs_container {
+    width: 100%;
+    height: 345px;
+  }
+  .songs_cata_container {
+    height: 800px;
+  }
+  .songs_cata_box {
+    width: 90%;
+    height: max-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 25px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .songs_cata {
+    width: 100%;
+    border: none;
+    border-radius: 2px;
+  }
+  .songs_cata .cata_bg_img {
+    width: 100%;
+    border-radius: 4px;
+    border: 2px solid black;
+  }
+  .songs_cata:hover .cata_arrow {
+    transform: scale(0.6);
+  }
+  .cata_arrow {
+    right: 23%;
+    transform: scale(0.9);
+  }
+  /*===================================
+                   Tik And Cross Buttons
+      ====================================*/
+  /*===================================
+                   Side Bar
+      ====================================*/
+  /*===================================
+                   Side Bar
+      ====================================*/
+}
+@media (min-width: 801px) and (max-width: 900px) {
+  :root {
+    --Side_all_categories_font_size-: 1.05rem;
+    --Three_dots_font_size-: 1.05rem;
+  }
+  html {
+    font-size: 100%;
+  }
+  /*===================================
+         Navigation Bar   
+      ====================================*/
+  .Navigation_options_background {
+    width: max-content;
+  }
+  .Nav_anchors{
+    padding: 0 9px;
+    padding-top: 15px;
+    padding-bottom: 39px;
+  }
+  /*===================================
+                      Logo 
+      ====================================*/
+  .Logo_container {
+    max-width: 39px;
+    min-height: 60px;
+  }
+  .logo_div {
+    height: 60px;
+    width: 60px;
+  }
+  .logo_img {
+    width: 80px;
+  }
+  /*===================================
+                     Sign In 
+      ====================================*/
+  .sign_in {
+    height: 40px;
+    width: 50px;
+    margin-top: 20px;
+    margin-right: 0px;
+  }
+  .login {
+    width: 50px;
+  }
+  /*===================================
+                     Search Button
+      ====================================*/
+  .search_div {
+    height: 20px;
+    margin-right: 32px;
+    width: 20px;
+    position: static;
+  }
+  .Search_img img {
+    cursor: pointer;
+    height: 48px;
+  }
+
+  /*===================================
+                  Search Input Tag
+      ====================================*/
+  .seach_btn_input {
+    justify-content: center;
+    width: 100vw;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -340%);
+  }
+  .search_input {
+    width: 70vw;
+    position: relative;
+  }
+  .search_input::placeholder {
+    left: 75px;
+  }
+  /* .Search_tool_tip::after {
+      display: none;
+    }
+    .Search_tool_tip::before {
+      display: none;
+    } */
+  /*===================================
+                   Side Menu Icon
+      ====================================*/
+  .Side_menu_icon {
+    right: 40px;
+  }
+  /*===================================
+                   Side Bar
+      ====================================*/
+  .Side_bar_container {
+    width: 400px;
+  }
+  /*===================================
+                  Hero Section
+      ====================================*/
+  .Salmon_heading {
+    font-size: 3rem;
+  }
+  .salmon_motto {
+    font-size: 0.9rem;
+  }
+  .btn_rounded_wb {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  .hero_background {
+    /* flex-wrap: wrap; */
+    height: 700px;
+    justify-content: center;
+  }
+  .main_heading {
+    height: 180px;
+    width: 100vw;
+    margin-top: 30px;
+  }
+
+  .listen_btn_div {
+    margin-top: 40px;
+  }
+  .Most_viewed_div {
+    width: 430px;
+    justify-content: center;
+    margin-right: 0px;
+  }
+  .artist {
+    width: 322px;
+    height: 33px;
+  }
+  .most_viewed_box {
+    height: 415px;
+    width: 68vw;
+    margin-right: 15px;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  /*===================================
+               Plan Compaison Boxes
+      ====================================*/
+  .Plans_div {
+    flex-wrap: nowrap;
+  }
+  .Plans_container {
+    margin-top: 100px;
+  }
+  .Plans_comparison_Box {
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+  }
+  .Standard_plan_box,
+  .Premium_plan_box {
+    margin-top: 0;
+    width: 30vw !important;
+  }
+  .Basic_plan_box {
+    width: 30vw !important;
+  }
+  .Three_plans:hover {
+    margin-top: 0px;
+  }
+  .Three_plans {
+    width: 300px;
+  }
+  /*===================================
+              Songs Categories
+      ====================================*/
+  .songs_container {
+    width: 100%;
+    height: 345px;
+  }
+  .songs_cata_container {
+    height: 800px;
+  }
+  .songs_cata_box {
+    width: 90%;
+    height: max-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 25px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .songs_cata {
+    width: 100%;
+    border: none;
+    border-radius: 2px;
+  }
+  .songs_cata .cata_bg_img {
+    width: 100%;
+    border-radius: 4px;
+    border: 2px solid black;
+  }
+  .songs_cata:hover .cata_arrow {
+    transform: scale(0.6);
+  }
+  .cata_arrow {
+    right: 23%;
+    transform: scale(0.9);
+  }
+  /*===================================
+                   Tik And Cross Buttons
+      ====================================*/
+  /*===================================
+                   Side Bar
+      ====================================*/
+  /*===================================
+                   Side Bar
+      ====================================*/
+}
+@media (min-width: 901px) and (max-width: 1000px) {
+  :root {
+    --Side_all_categories_font_size-: 1rem;
+    --Three_dots_font_size-: 1rem;
+  }
+  html {
+    font-size: 100%;
+  }
+  /*===================================
+         Navigation Bar   
+      ====================================*/
+  .Navigation_options_background {
+    width: max-content;
+  }
+  .Nav_anchors{
+    padding: 0 14px;
+    padding-top: 15px;
+    padding-bottom: 39px;
+  }
+  /*===================================
+                      Logo 
+      ====================================*/
+  .Logo_container {
+    max-width: 39px;
+    min-height: 60px;
+  }
+  .logo_div {
+    height: 60px;
+    width: 60px;
+  }
+  .logo_img {
+    width: 80px;
+  }
+  /*===================================
+                     Sign In 
+      ====================================*/
+  .sign_in {
+    height: 40px;
+    width: 50px;
+    margin-top: 20px;
+    margin-right: 0px;
+  }
+  .login {
+    width: 50px;
+  }
+  /*===================================
+                     Search Button
+      ====================================*/
+  .search_div {
+    height: 20px;
+    margin-right: 32px;
+    width: 20px;
+    position: static;
+  }
+  .Search_img img {
+    cursor: pointer;
+    height: 48px;
+  }
+
+  /*===================================
+                  Search Input Tag
+      ====================================*/
+  .seach_btn_input {
+    justify-content: center;
+    width: 100vw;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -340%);
+  }
+  .search_input {
+    width: 70vw;
+    position: relative;
+  }
+  .search_input::placeholder {
+    left: 75px;
+  }
+  /* .Search_tool_tip::after {
+      display: none;
+    }
+    .Search_tool_tip::before {
+      display: none;
+    } */
+  /*===================================
+                   Side Menu Icon
+      ====================================*/
+  .Side_menu_icon {
+    right: 40px;
+  }
+  /*===================================
+                   Side Bar
+      ====================================*/
+  .Side_bar_container {
+    width: 400px;
+  }
+  /*===================================
+                  Hero Section
+      ====================================*/
+  .Salmon_heading {
+    font-size: 4rem;
+  }
+  .salmon_motto {
+    font-size: 1rem;
+  }
+  .btn_rounded_wb {
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+  .hero_background {
+    /* flex-wrap: wrap; */
+    height: 700px;
+    justify-content: center;
+  }
+  .main_heading {
+    height: 180px;
+    width: 100vw;
+    margin-top: 30px;
+  }
+
+  .listen_btn_div {
+    margin-top: 40px;
+    width: 143px;
+  }
+  .Most_viewed_div {
+    width: 430px;
+    justify-content: center;
+    margin-right: 20px;
+  }
+  .artist {
+    width: 288px;
+    height: 33px;
+  }
+  .most_viewed_box {
+    height: 415px;
+    width: 68vw;
+    margin-right: 15px;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  /*===================================
+               Plan Compaison Boxes
+      ====================================*/
+  .Plans_div {
+    flex-wrap: nowrap;
+  }
+  .Plans_container {
+    margin-top: 100px;
+  }
+  .Plans_comparison_Box {
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+  }
+  .Standard_plan_box,
+  .Premium_plan_box {
+    margin-top: 0;
+    width: 30vw !important;
+  }
+  .Basic_plan_box {
+    width: 30vw !important;
+  }
+  .Three_plans:hover {
+    margin-top: 0px;
+  }
+  .Three_plans {
+    width: 300px;
+  }
+  /*===================================
+              Songs Categories
+      ====================================*/
+  .songs_container {
+    width: 100%;
+    height: 345px;
+  }
+  .songs_cata_container {
+    height: 800px;
+  }
+  .songs_cata_box {
+    width: 90%;
+    height: max-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 25px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .songs_cata {
+    width: 100%;
+    border: none;
+    border-radius: 2px;
+  }
+  .songs_cata .cata_bg_img {
+    width: 100%;
+    border-radius: 4px;
+    border: 2px solid black;
+  }
+  .songs_cata:hover .cata_arrow {
+    transform: scale(0.6);
+  }
+  .cata_arrow {
+    right: 23%;
+    transform: scale(0.9);
+  }
+  /*===================================
+                   Tik And Cross Buttons
+      ====================================*/
+  /*===================================
+                   Side Bar
+      ====================================*/
+  /*===================================
+                   Side Bar
+      ====================================*/
+}
+@media (min-width: 1001px) and (max-width: 1100px) {
+  :root {
+    --Side_all_categories_font_size-: 1rem;
+    --Three_dots_font_size-: 1rem;
+  }
+  html {
+    font-size: 100%;
+  }
+  /*===================================
+         Navigation Bar   
+      ====================================*/
+  .Navigation_options_background {
+    width: max-content;
+  }
+  .Nav_anchors{
+    padding: 0 14px;
+    padding-top: 15px;
+    padding-bottom: 39px;
+  }
+  /*===================================
+                      Logo 
+      ====================================*/
+  .Logo_container {
+    max-width: 39px;
+    min-height: 60px;
+  }
+  .logo_div {
+    height: 60px;
+    width: 60px;
+  }
+  .logo_img {
+    width: 80px;
+  }
+  /*===================================
+                     Sign In 
+      ====================================*/
+  .sign_in {
+    height: 40px;
+    width: 50px;
+    margin-top: 20px;
+    margin-right: 0px;
+  }
+  .login {
+    width: 50px;
+  }
+  /*===================================
+                     Search Button
+      ====================================*/
+  .search_div {
+    height: 20px;
+    margin-right: 32px;
+    width: 20px;
+    position: static;
+  }
+  .Search_img img {
+    cursor: pointer;
+    height: 48px;
+  }
+
+  /*===================================
+                  Search Input Tag
+      ====================================*/
+  .seach_btn_input {
+    justify-content: center;
+    width: 100vw;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -340%);
+  }
+  .search_input {
+    width: 70vw;
+    position: relative;
+  }
+  .search_input::placeholder {
+    left: 75px;
+  }
+  /* .Search_tool_tip::after {
+      display: none;
+    }
+    .Search_tool_tip::before {
+      display: none;
+    } */
+  /*===================================
+                   Side Menu Icon
+      ====================================*/
+  .Side_menu_icon {
+    right: 40px;
+  }
+  /*===================================
+                   Side Bar
+      ====================================*/
+  .Side_bar_container {
+    width: 400px;
+  }
+  /*===================================
+                  Hero Section
+      ====================================*/
+  .Salmon_heading {
+    font-size: 4rem;
+  }
+  .salmon_motto {
+    font-size: 1rem;
+  }
+  .btn_rounded_wb {
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+  .hero_background {
+    /* flex-wrap: wrap; */
+    height: 700px;
+    justify-content: center;
+  }
+  .main_heading {
+    height: 180px;
+    width: 100vw;
+    margin-top: 30px;
+  }
+
+  .listen_btn_div {
+    margin-top: 40px;
+    width: 143px;
+  }
+  .Most_viewed_div {
+    width: 430px;
+    justify-content: center;
+    margin-right: 20px;
+  }
+  .artist {
+    width: 288px;
+    height: 33px;
+  }
+  .most_viewed_box {
+    height: 415px;
+    width: 68vw;
+    margin-right: 15px;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  /*===================================
+               Plan Compaison Boxes
+      ====================================*/
+  .Plans_div {
+    flex-wrap: nowrap;
+  }
+  .Plans_container {
+    margin-top: 100px;
+  }
+  .Plans_comparison_Box {
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+  }
+  .Standard_plan_box,
+  .Premium_plan_box {
+    margin-top: 0;
+    width: 30vw !important;
+  }
+  .Basic_plan_box {
+    width: 30vw !important;
+  }
+  .Three_plans {
+    width: 300px;
+  }
+  /*===================================
+              Songs Categories
+      ====================================*/
+  .songs_container {
+    width: 100%;
+    height: 345px;
+  }
+  .songs_cata_container {
+    height: 800px;
+  }
+  .songs_cata_box {
+    width: 90%;
+    height: max-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .songs_cata {
+    width: 100%;
+    border: none;
+    border-radius: 2px;
+  }
+  .songs_cata .cata_bg_img {
+    width: 100%;
+    border-radius: 4px;
+    border: 2px solid black;
+  }
+  .songs_cata:hover .cata_arrow {
+    transform: scale(0.6);
+  }
+  .cata_arrow {
+    right: 23%;
+    transform: scale(0.9);
+  }
+  /*===================================
+                   Tik And Cross Buttons
+      ====================================*/
+  /*===================================
+                   Side Bar
+      ====================================*/
+  /*===================================
+                   Side Bar
+      ====================================*/
+}
+
+
+@media (min-width: 1101px) and (max-width: 1800px) {
+  :root {
+    --Side_all_categories_font_size-: 1rem;
+    --Three_dots_font_size-: 1rem;
+  }
+  html {
+    font-size: 100%;
+  }
+  /*===================================
+         Navigation Bar   
+      ====================================*/
+  .Navigation_options_background {
+    width: max-content;
+  }
+  .Nav_anchors{
+    padding: 0 30px;
+    padding-top: 15px;
+    padding-bottom: 39px;
+    font-size: 1.1rem;
+  }
+  /*===================================
+                      Logo 
+      ====================================*/
+  .Logo_container {
+    max-width: 39px;
+    min-height: 60px;
+  }
+  .logo_div {
+    height: 60px;
+    width: 60px;
+  }
+  .logo_img {
+    width: 80px;
+  }
+  /*===================================
+                     Sign In 
+      ====================================*/
+  .sign_in {
+    height: 40px;
+    width: 50px;
+    margin-top: 20px;
+    margin-right: 0px;
+  }
+  .login {
+    width: 50px;
+  }
+  /*===================================
+                     Search Button
+      ====================================*/
+  .search_div {
+    height: 20px;
+    margin-right: 32px;
+    width: 20px;
+    position: static;
+  }
+  .Search_img img {
+    cursor: pointer;
+    height: 48px;
+  }
+
+  /*===================================
+                  Search Input Tag
+      ====================================*/
+  .seach_btn_input {
+    justify-content: center;
+    width: 100vw;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -340%);
+  }
+  .search_input {
+    width: 70vw;
+    position: relative;
+  }
+  .search_input::placeholder {
+    left: 75px;
+  }
+  /* .Search_tool_tip::after {
+      display: none;
+    }
+    .Search_tool_tip::before {
+      display: none;
+    } */
+  /*===================================
+                   Side Menu Icon
+      ====================================*/
+  .Side_menu_icon {
+    right: 80px;
+  }
+  /*===================================
+                   Side Bar
+      ====================================*/
+  .Side_bar_container {
+    width: 400px;
+  }
+  /*===================================
+                  Hero Section
+      ====================================*/
+  .Salmon_heading {
+    font-size: 4rem;
+  }
+  .salmon_motto {
+    font-size: 1.2rem;
+  }
+  .btn_rounded_wb {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  .hero_background {
+    /* flex-wrap: wrap; */
+    height: 700px;
+    justify-content: center;
+  }
+  .main_heading {
+    height: 180px;
+    width: 100vw;
+    margin-top: 30px;
+  }
+
+  .listen_btn_div {
+    margin-top: 40px;
+    width: 173px;
+  }
+  .Most_viewed_div {
+    width: 430px;
+    justify-content: center;
+    margin-right: 20px;
+  }
+  .artist {
+    width: 288px;
+    height: 33px;
+  }
+  .most_viewed_box {
+    height: 415px;
+    width: 68vw;
+    margin-right: 15px;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  /*===================================
+               Plan Compaison Boxes
+      ====================================*/
+  .Plans_div {
+    flex-wrap: nowrap;
+  }
+  .Plans_container {
+    margin-top: 50px;
+  }
+  .Plans_comparison_container{
+    min-height: 573px;
+    margin-top: 50px;
+  }
+  .Plans_comparison_Box {
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin-top: 0px;
+  }
+  .Standard_plan_box,
+  .Premium_plan_box {
+    margin-top: 0;
+    width: 30vw !important;
+  }
+  .Basic_plan_box {
+    width: 30vw !important;
+  }
+  .Three_plans {
+    width: 300px;
+  }
+  /*===================================
+              Songs Categories
+      ====================================*/
+  .songs_container {
+    width: 100%;
+    height: 345px;
+  }
+  .songs_cata_container {
+    height: 800px;
+  }
+  .songs_cata_box {
+    width: 90%;
+    height: max-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .songs_cata {
+    width: 100%;
+    border: none;
+    border-radius: 2px;
+  }
+  .songs_cata .cata_bg_img {
+    width: 100%;
+    border-radius: 4px;
+    border: 2px solid black;
+  }
+  .songs_cata:hover .cata_arrow {
+    transform: scale(0.6);
+  }
+  .cata_arrow {
+    right: 23%;
+    transform: scale(0.9);
+  }
+  /*===================================
+                   Tik And Cross Buttons
+      ====================================*/
+  /*===================================
+                   Side Bar
+      ====================================*/
+  /*===================================
+                   Side Bar
+      ====================================*/
+}
+
+

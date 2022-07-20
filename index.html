@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Please Verify</title>
+</head>
+<body>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  user-select: none;
+  -webkit-tap-highlight-color:transparent;
+}
+body{
+  background-color: rgba(0, 0, 0, .4);
+}
+
+                        /* Heading div  */
+.Heading_div_verify,.Verify_password_div{
+  width: 100vw;
+  height: 200px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  border-bottom: 1px solid white;
+}
+.Verify_password_div{
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.Verify_heading{
+  color: aliceblue;
+  font-size: 2rem;
+}
+.Verify_input{
+  height: 40px;
+  width: 390px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  padding: 0px 20px;
+}
+.Verify_pass_btn{
+  padding: 8px 60px;
+  font-size: 1.3rem;
+  background: linear-gradient(rgb(8, 133, 182),rgb(18, 130, 228));
+  border: none;
+  border-radius: 2px;
+  color: white;
+  cursor: pointer;
+}
+    </style>
+     <!-- Verification  -->
+     <div class="verification" id="verify_bg">
+        <div class="Heading_div_verify">
+            <p class="Verify_heading">Lets Verify Its You</p>
+        </div>
+        <div class="Verify_password_div">
+            <form>
+            <input type="password" autocomplete="new-password" name="password" id="Verify_pass" class="Verify_input" placeholder="Enter Password">
+        </form>
+           <a id="redirect"><button class="Verify_pass_btn" id="Verify_button" onclick="Verifying_Password()">Verify</button></a> 
+        </div>
+        </div>
+        <script>
+                                        // Security 
+
+Verifying_Password = ()=>{
+    let verification_background = document.getElementById("verify_bg");
+    let Password_input = document.getElementById('Verify_pass');
+    let redirect_to_site = document.getElementById('redirect');
+    if(Password_input.value=='itsrehanjs'){
+        verification_background.style.display='none';
+        redirect_to_site.setAttribute('href','./indexx.html');
+    }
+}
+        </script>
+</body>
+</html>

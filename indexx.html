@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Salmon | Enjoy free music on salmon and boost your soul" />
+    <link rel="shortcut icon" href="Images/Logos/Logo1.jpeg" type="image/x-icon" />
+    <title>Salmon | Enjoy Free Music</title>
+    <!-- Css -->
+    <link rel="stylesheet" href="Css/Index.css" />
+    <link rel="stylesheet" href="Css/Media.css" />
+    <link rel="stylesheet" href="Css/700+Media.css" />
+</head>
+
+<body id="body">
+    <!--===============================================================================
+            Side Menu | Side Bar | Side Menu | Side Menu | Side Bar | Side Menu
+    =============================================================================== -->
+<div id="Side_bar_overlay"></div>
+
+    <!-- Full Side Bar  -->
+
+    <div draggable="false" class="Side_bar_container" id="Side_menu_background">
+        <!-- Side Bar Background -->
+
+        <div draggable="false" class="Side_bar_background" id="Side_bar_back_ground"></div>
+        <!-- Basic Options Of Nav bar to link other pages of the website  -->
+        <!-- Go to Home Link  -->
+        <div id="Cate_gories_all_container">
+        <div draggable="false" class="Side_bar_home_option basic_options">
+            <img draggable="false" src="img/Home.png" class="Basic_options_imgs home_img" alt="" />
+            <a draggable="false" href="#" class="Basic_links_navigation">Home</a>
+        </div>
+        <!-- Go to Contact Us Link  -->
+        <div draggable="false" class="Side_bar_Contact_us_option basic_options">
+            <img draggable="false" src="img/Contact_us.png" class="Basic_options_imgs" alt="" />
+            <a draggable="false" href="#" class="Basic_links_navigation">Contact Us</a>
+        </div>
+        <!-- Go to About Us Link  -->
+        <div draggable="false" class="Side_bar_About_us_option basic_options">
+            <img draggable="false" src="img/About_us.png" class="Basic_options_imgs" alt="" />
+            <a draggable="false" href="#" class="Basic_links_navigation">Singers</a>
+        </div>
+        <!-- Go to Services Link  -->
+        <div draggable="false" class="Side_bar_Services_option basic_options">
+            <img draggable="false" src="img/Services.png" class="Basic_options_imgs Services_img" alt="" />
+            <a draggable="false" href="#" class="Basic_links_navigation">Premium Music</a>
+        </div>
+        <!-- Catagories Names  -->
+        <div draggable="false" class="side_bar_catagori_1 side_bar_catagories"
+            onclick="show_computers_catagori_details()">
+            <p class="cate_para">Computers</p>
+            <div draggable="false" class="arrow_div">
+                <div draggable="false" class="Category_arrow">
+                    <div draggable="false" class="arrow_line_1"></div>
+                    <div draggable="false" class="arrow_line_2"></div>
+                </div>
+            </div>
+        </div>
+        <div draggable="false" class="side_bar_catagori_2 side_bar_catagories"
+            onclick="show_grocery_catagori_details()">
+            <p class="cate_para">Grocery</p>
+            <div draggable="false" class="arrow_div">
+                <div draggable="false" class="Category_arrow">
+                    <div draggable="false" class="arrow_line_1"></div>
+                    <div draggable="false" class="arrow_line_2"></div>
+                </div>
+            </div>
+        </div>
+        <div draggable="false" class="side_bar_catagori_3 side_bar_catagories" onclick="show_animal_catagori_details()">
+            <p class="cate_para">Animals</p>
+            <div draggable="false" class="arrow_div">
+                <div draggable="false" class="Category_arrow">
+                    <div draggable="false" class="arrow_line_1"></div>
+                    <div draggable="false" class="arrow_line_2"></div>
+                </div>
+            </div>
+        </div>
+        <div draggable="false" class="side_bar_catagori_4 side_bar_catagories"
+            onclick="show_furniture_catagori_details()">
+           <p class="cate_para">Furniture</p>
+            <div draggable="false" class="arrow_div">
+                <div draggable="false" class="Category_arrow">
+                    <div draggable="false" class="arrow_line_1"></div>
+                    <div draggable="false" class="arrow_line_2"></div>
+                </div>
+            </div>
+        </div>
+        <div draggable="false" class="side_bar_catagori_5 side_bar_catagories"
+            onclick="show_Softwares_catagori_details()">
+            <p class="cate_para">Softwares</p>
+            <div draggable="false" class="arrow_div">
+                <div draggable="false" class="Category_arrow">
+                    <div draggable="false" class="arrow_line_1"></div>
+                    <div draggable="false" class="arrow_line_2"></div>
+                </div>
+            </div>
+        </div>
+        <div draggable="false" class="side_bar_catagori_6 side_bar_catagories" onclick="show_Toys_catagori_details()">
+            <p class="cate_para">Toys</p>
+            <div draggable="false" class="arrow_div">
+                <div draggable="false" class="Category_arrow">
+                    <div draggable="false" class="arrow_line_1"></div>
+                    <div draggable="false" class="arrow_line_2"></div>
+                </div>
+            </div>
+        </div>
+        <div draggable="false" class="side_bar_catagori_7 side_bar_catagories"
+            onclick="show_Home_appliances_catagori_details()">
+            <p class="cate_para">Home Appliances</p>
+            <div draggable="false" class="arrow_div">
+                <div draggable="false" class="Category_arrow">
+                    <div draggable="false" class="arrow_line_1"></div>
+                    <div draggable="false" class="arrow_line_2"></div>
+                </div>
+            </div>
+        </div>
+        <div draggable="false" class="side_bar_catagori_8 side_bar_catagories"
+            onclick="show_Home_Decoration_catagori_details()">
+            <p class="cate_para">Home Decoration</p>
+            <div draggable="false" class="arrow_div">
+                <div draggable="false" class="Category_arrow">
+                    <div draggable="false" class="arrow_line_1"></div>
+                    <div draggable="false" class="arrow_line_2"></div>
+                </div>
+            </div>
+        </div>
+        <div draggable="false" class="side_bar_catagori_9 side_bar_catagories"
+            onclick="show_Gents_Garments_catagori_details()">
+            <p class="cate_para">Gents Garments</p>
+            <div draggable="false" class="arrow_div">
+                <div draggable="false" class="Category_arrow">
+                    <div draggable="false" class="arrow_line_1"></div>
+                    <div draggable="false" class="arrow_line_2"></div>
+                </div>
+            </div>
+        </div>
+        <div style="height:1px; width: 100%; background-color: rgb(193, 193, 193); margin-top: 2px;"></div>
+        <div draggable="false" class="side_bar_catagori_10 side_bar_catagories extra_categories" style=" margin-top: 2px;"id="Ex_Category1"
+            onclick="show_Ladies_Garments_catagori_details()">
+            <p class="cate_para">Ladies Garments</p>
+            <div draggable="false" class="arrow_div">
+                <div draggable="false" class="Category_arrow">
+                    <div draggable="false" class="arrow_line_1"></div>
+                    <div draggable="false" class="arrow_line_2"></div>
+                </div>
+            </div>
+        </div>
+        <div draggable="false" class="side_bar_catagori_11 side_bar_catagories extra_categories" id="Ex_Category2"
+            onclick="show_Vehicle_Parts_Garments_catagori_details()">
+            <p class="cate_para">Vehical Parts</p>
+            <div draggable="false" class="arrow_div">
+                <div draggable="false" class="Category_arrow">
+                    <div draggable="false" class="arrow_line_1"></div>
+                    <div draggable="false" class="arrow_line_2"></div>
+                </div>
+            </div>
+        </div>
+        <div draggable="false" class="side_bar_catagori_12 side_bar_catagories extra_categories" id="Ex_Category3"
+            onclick="show_Property_catagori_details()">
+            <p class="cate_para">Property</p>
+            <div draggable="false" class="arrow_div">
+                <div draggable="false" class="Category_arrow">
+                    <div draggable="false" class="arrow_line_1"></div>
+                    <div draggable="false" class="arrow_line_2"></div>
+                </div>
+            </div>
+        </div>
+        <div draggable="false" class="side_bar_catagori_13 side_bar_catagories extra_categories" id="Ex_Category4"
+            onclick="show__catagori_details()">
+            <p class="cate_para">Books</p>
+            <div draggable="false" class="arrow_div">
+                <div draggable="false" class="Category_arrow">
+                    <div draggable="false" class="arrow_line_1"></div>
+                    <div draggable="false" class="arrow_line_2"></div>
+                </div>
+            </div>
+        </div>
+        <div draggable="false" class="side_bar_catagori_14 side_bar_catagories extra_categories" id="Ex_Category5"
+            onclick="show__catagori_details()">
+            <p class="cate_para">Food</p>
+            <div draggable="false" class="arrow_div">
+                <div draggable="false" class="Category_arrow">
+                    <div draggable="false" class="arrow_line_1"></div>
+                    <div draggable="false" class="arrow_line_2"></div>
+                </div>
+            </div>
+        </div>
+        <div draggable="false" class="side_bar_catagori_15 side_bar_catagories extra_categories" id="Ex_Category6"
+            onclick="show__catagori_details()">
+            <p class="cate_para">Office</p>
+            <div draggable="false" class="arrow_div">
+                <div draggable="false" class="Category_arrow">
+                    <div draggable="false" class="arrow_line_1"></div>
+                    <div draggable="false" class="arrow_line_2"></div>
+                </div>
+            </div>
+        </div>
+        <div draggable="false" class="See_more_container side_bar_catagories" onclick="Show_more_categories()">
+            <div draggable="false" class="See_more_div" id="See_more_cate">
+                See More
+            </div>
+            <div draggable="false" class="See_more_arrow">
+                <div draggable="false" class="More_cat_arrow" id="See_less_arrow">
+                    <div draggable="false" class="see_arrow_line_1"></div>
+                    <div draggable="false" class="see_arrow_line_2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Each Cata Gori Options  -->
+        <div draggable="false" class="side_menu_top" id="Side_catagori_logo">
+            <div draggable="false" class="cross_menu_icon" id="Cross_Nav_btn" onclick="ShowHide()">
+                <span class="line1_cross cross_icon_lines"></span>
+                <span class="line2 cross_icon_lines"></span>
+            </div>
+            <!-- Sign in Option/Button  -->
+            <div draggable="false" class="Sign_in_container">
+                <div draggable="false" class="Sign_in_div">
+                    <a draggable="false" href="#" class="Sign_in_btn">Sign In</a>
+                </div>
+            </div>
+            <!-- Ends Here  -->
+            <div draggable="false" class="Three_dots_menu_cont" id="Three_dots_Side_menu_container">
+                <div draggable="false" class="three_dots_div" onclick="Show_dots_details()">
+                    <div draggable="false" id="Side_Dot1" class="Side_menu_dots"></div>
+                    <div draggable="false" id="Side_Dot2" class="Side_menu_dots"></div>
+                    <div draggable="false" id="Side_Dot3" class="Side_menu_dots"></div>
+                </div>
+                <div draggable="false" class="dots_Details_cont" id="Dots_Details_container">
+                    <div draggable="false" class="Dots_details_box">
+                        <div draggable="false" class="Three_dot_items Three_dots_opt_one">
+                            <a draggable="false" href="#" class="three_dots_anchors three_dot_anchor_one">Facebook</a>
+                        </div>
+                        <div draggable="false" class="Three_dot_items Three_dots_opt_two">
+                            <a draggable="false" href="#" class="three_dots_anchors three_dot_anchor_two">Youtube</a>
+                        </div>
+                        <div draggable="false" class="Three_dot_items Three_dots_opt_three">
+                            <a draggable="false" href="#"
+                                class="three_dots_anchors three_dot_anchor_three">Instagram</a>
+                        </div>
+                        <div draggable="false" class="Three_dot_items Three_dots_opt_four">
+                            <a draggable="false" href="#" class="three_dots_anchors three_dot_anchor_four">Twitter</a>
+                        </div>
+                        <div draggable="false" class="Three_dot_items Three_dots_opt_four Close_dot_details"
+                            onclick="Show_dots_details()">
+                            <span class="line1_cross cross_icon_lines dot_details_cross_lines"></span>
+                            <span class="line2 cross_icon_lines dot_details_cross_lines"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+        <div draggable="false" class="catagories_options_container" id="cata_gori_container">
+            <div draggable="false" class="Catagories_details" id="Catagori_Details_box">
+                <div draggable="false" class="go_back_div" onclick="Hide_cata_details()">
+                    <img draggable="false" src="img/Down_Arrow_Black.png" alt="Back" class="Go_back" onclick=""
+                        id="go_back" />
+                </div>
+                <div draggable="false" class="cata_opts_div" id="Cata_opts_1">
+                    <a draggable="false" href="#" class="cata_options" id="cat_option1"></a>
+                </div>
+                <div draggable="false" class="cata_opts_div">
+                    <a draggable="false" href="#" class="cata_options" id="cat_option2"></a>
+                </div>
+                <div draggable="false" class="cata_opts_div">
+                    <a draggable="false" href="#" class="cata_options" id="cat_option3"></a>
+                </div>
+                <div draggable="false" class="cata_opts_div">
+                    <a draggable="false" href="#" class="cata_options" id="cat_option4"></a>
+                </div>
+                <div draggable="false" class="cata_opts_div">
+                    <a draggable="false" href="#" class="cata_options" id="cat_option5"></a>
+                </div>
+                <div draggable="false" class="cata_opts_div">
+                    <a draggable="false" href="#" class="cata_options" id="cat_option6"></a>
+                </div>
+                <div draggable="false" class="cata_opts_div">
+                    <a draggable="false" href="#" class="cata_options" id="cat_option7"></a>
+                </div>
+                <div draggable="false" class="cata_opts_div">
+                    <a draggable="false" href="#" class="cata_options" id="cat_option8"></a>
+                </div>
+                <div draggable="false" class="cata_opts_div">
+                    <a draggable="false" href="#" class="cata_options" id="cat_option9"></a>
+                </div>
+                <div draggable="false" class="cata_opts_div">
+                    <a draggable="false" href="#" class="cata_options" id="cat_option10"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--===============================================================================
+    ===============================================================================
+            Side Menu Ends Here
+    ===============================================================================
+    =============================================================================== -->
+
+  <header>
+        <nav>
+            <!-- Navigation bar background  -->
+            <div class="nav_container" >
+                <!-- Logo  -->
+                <div class="Logo_container">
+                    <div class="logo_div">
+                        <a href=""><img src="Images/Logos/Logo1.jpeg" alt="" class="logo_img" /></a>
+                    </div>
+                </div>
+                <!-- Navigation Bar List Items  -->
+                <div class="Navigation_options_background">
+                    <ul class="Navigation_ul">
+                        <li class="navigation_li">
+                            <a href="#" draggable="false" class="Nav_anchors" onclick="Home_anchor_underline()"id="Home_link">Home</a>
+                        </li>
+                        <li class="navigation_li">
+                            <a href="#"  draggable="false" class="Nav_anchors" onclick="Recent_anchor_underline()"
+                             id="recent_music_link">Recent Music</a>
+                        </li>
+                        <li class="navigation_li">
+                            <a href="#" draggable="false" class="Nav_anchors" onclick="Singers_anchor_underline()" id="singers_link">Singers</a>
+                        </li>
+                        <li class="navigation_li">
+                            <a href="#" draggable="false" class="Nav_anchors" onclick="Contact_anchor_underline()" id="contact_us">Contact Us</a>
+                        </li>
+                        <li class="navigation_li">
+                            <a href="#" draggable="false" class="Nav_anchors" onclick="Premium_anchor_underline()" id="premium">Premium Music</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End  -->
+                <!-- Sign in btn starts here  -->
+                <a href="#" style="text-decoration: none">
+                    <div class="sign_in">
+                        <div class="sign_inbtn">
+                            <img src="Images/Icons/login_icon.png" alt="Signin" class="login" />
+                        </div>
+                        <p class="signin_para">Sign In</p>
+                    </div>
+                </a>
+                <!-- Ends here  -->
+                <!-- Search Button Starts here  -->
+                <div class="search_div">
+                    <div class="seach_btn_input" id="searchbar">
+                        <div class="search_div_two div_search">
+                            <input type="text" class="search_input" spellcheck="false" name="search_button_info"
+                                onclick="searchhover()" placeholder="Search Salmon" id="search_bar" draggable="false" />
+                        </div>
+                        <!-- Search Button  -->
+                        <div class="search_btn_div">
+                            <img src="Images/Icons/Search_Icon.png" alt="search" class="search_btn" draggable="false" />
+                        </div>
+                    </div>
+                    <div class="Search_img" onclick="Hide_search()" id="SearchButton" onmouseover="SearchToolTip()"
+                        onmouseout="RemoveSearchToolTip()">
+                        <img src="Images/Icons/Search_Icon_Black.png" alt="" />
+                    </div>
+                </div>
+                <div class="empty_nav"></div>
+                <!-- Ends here  -->
+                <!-- Side Navigation Bar Button Starts Here  -->
+                <div draggable="false" draggable="false" class="Side_menu_icon" id="Side_Nav_btn" onclick="ShowHide()">
+                    <span class="line1 Side_icon_lines" id="Line_one"></span>
+                    <span class="line2 Side_icon_lines" id="Line_two"></span>
+                    <span class="line3 Side_icon_lines" id="Line_three"></span>
+                </div>
+                <!-- Ends Here  -->
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="hero_background">
+                <div class="main_heading">
+                    <div class="heading_align">
+                        <h1 class="Salmon_heading">Salmon</h1>
+                        <h3 class="salmon_motto">
+                            Listen free music and boost your soul
+                        </h3>
+                    </div>
+                    <div class="listen_btn_div">
+                        <a href="" class="btn_rounded_wb" id="read_more">Listen Now</a>
+                    </div>
+                </div>
+                <div class="Most_viewed_div">
+                    <div class="most_viewed_box">
+                        <div class="most_para">
+                            <p>Most Viewed Songs</p>
+                        </div>
+                        <div class="songs_container">
+                            <div class="mostviewed_songs">
+                                <a href="#" id="song1" class="hero_songs">Chor diya wo rasta jis raste se tum thy
+                                    guzre</a>
+                                <div class="artist">
+                                    <p>Artist : Arjhit singh</p>
+                                    <span class="" onmouseout="RemoveDuration1()" onmouseover="Duration1()"
+                                        id="Song_duration_1">5 : 98s</span>
+                                    <a href="#" class="Hero_songs_play">Play</a>
+                                </div>
+                            </div>
+
+                            <div class="mostviewed_songs"  >
+                                <a href="#" id="song2" class="hero_songs">Dewaana kr rha hai mujh ko roop sunehra</a>
+                                <div class="artist">
+                                    <p>Artist : Arjhit singh</p>
+                                    <span class="" onmouseout="RemoveDuration2()" onmouseover="Duration2()"
+                                        id="Song_duration_2">7 : 98s</span>
+                                    <a href="#" class="Hero_songs_play">Play</a>
+                                </div>
+                            </div>
+                            <div class="mostviewed_songs">
+                                <a href="#" id="song3" class="hero_songs">Toh phir aao mujh ko stao</a>
+                                <div class="artist">
+                                    <p>Artist : Arjhit singh</p>
+                                    <span class="" onmouseout="RemoveDuration3()" onmouseover="Duration3()"
+                                        id="Song_duration_3">5 : 98s</span>
+                                    <a href="#" class="Hero_songs_play">Play</a>
+                                </div>
+                            </div>
+                            <div class="mostviewed_songs">
+                                <a href="#" id="song4" class="hero_songs">O tere sang yara ab nai hai guzara</a>
+                                <div class="artist">
+                                    <p>Artist : Arjhit singh</p>
+                                    <span class="" onmouseout="RemoveDuration4()" onmouseover="Duration4()"
+                                        id="Song_duration_4">5 : 98s</span>
+                                    <a href="#" class="Hero_songs_play">Play</a>
+                                </div>
+                            </div>
+                            <div class="mostviewed_songs">
+                                <a href="#" id="song5" class="hero_songs">Tu hamsafar tu ham kadam tu hamnava mera</a>
+                                <div class="artist">
+                                    <p>Artist : Arjhit singh</p>
+                                    <span class="" onmouseout="RemoveDuration5()" onmouseover="Duration5()"
+                                        id="Song_duration_5">5 : 98s</span>
+                                    <a href="#" class="Hero_songs_play">Play</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--=====================================================================================================
+                                    Plans Section Begins From Here  
+=======================================================================================================-->
+        <section>
+            <div class="Plans_container">
+                <div class="Plans_div">
+                    <!-- ==============================  Basic Plan  =============================== -->
+                    <div class="Basic_plan Three_plans">
+                        <!-- Heading Div  -->
+                        <div class="plans_heading Basic_heading">Basic</div>
+                        <!-- Img Div  -->
+                        <div class="Plans_imgs basic_plan_imgs">
+                            <img src="Images/tune.png" alt="Basic" class="Basic_img Plans_images" />
+                        </div>
+                        <!-- Details Div  -->
+                        <div class="Plans_details">
+                            <p class="Basic_plan_details Plan_description">
+                                We serve you our premium content free of cost in this plan.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Ends  -->
+                    <!-- ==============================  Standard Plan  =============================== -->
+                    <div class="Standard_plan Three_plans">
+                        <!-- Heading Div  -->
+                        <div class="plans_heading Standard_heading">Standard</div>
+                        <!-- Img Div  -->
+                        <div class="Plans_imgs standard_plan_imgs">
+                            <img src="Images/Standard.png" alt="Basic" class="Standard_img Plans_images" />
+                        </div>
+                        <!-- Details Div  -->
+                        <div class="Plans_details">
+                            <p class="Basic_plan_details Plan_description">
+                                In this plan you will pay bit a money and enjoy alot of
+                                premium music.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Ends  -->
+                    <!-- ==============================  Premium Plan  =============================== -->
+                    <div class="Premium_plan Three_plans">
+                        <!-- Heading Div  -->
+                        <div class="plans_heading Premium_heading">Premium</div>
+                        <!-- Img Div  -->
+                        <div class="Plans_imgs Premium_plan_imgs">
+                            <img src="Images/Premium.png" alt="Basic" class="premium_img Plans_images" />
+                        </div>
+                        <!-- Details Div  -->
+                        <div class="Plans_details">
+                            <p class="premium_plan_details Plan_description">
+                                In this plan your heart will filled with love and soul with
+                                music.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- ============================  Ends ================================== -->
+                </div>
+            </div>
+        </section>
+        <!-- Plans Section Ends Here  -->
+        <!--=====================================================================================
+                            Plans Comparison Section Begins From Here  
+        ======================================================================================-->
+        <section>
+            <div class="Plans_comparison_container">
+                <div class="Plans_comparison_Box">
+                    <!-- ================== Basic Plan Full Box ============== -->
+                    <div class="Basic_plan_box">
+                        <!-- Heading Div  -->
+                        <div class="basic_comparison_div">
+                            <p>Basic</p>
+                        </div>
+                        <!-- Price Div  -->
+                        <div class="basic_comparison_price">
+                            <p>$ 0 / month</p>
+                        </div>
+                        <!-- Services We ARe providing  -->
+                        <!-- Feature Number 1  -->
+                        <div class="Plans_features">
+                            <div class="Plans_tik_icon"   >
+                                <div class="long_line_of_tik"></div>
+                                <div class="small_line_of_tik"></div>
+                            </div>
+                            <div class="feature_text">
+                                <p>Download Button Included</p>
+                            </div>
+                        </div>
+                        <!-- Feature Number 2  -->
+                        <div class="Plans_features">
+                            <div class="Cross_feature_icon">
+                                <div class="Cross_icon_lineone"></div>
+                                <div class="Cross_icon_linetwo"></div>
+                            </div>
+                            <div class="feature_text">
+                                <p>Allowed For Commercial Use</p>
+                            </div>
+                        </div>
+                          <!-- Feature Number 3  -->
+                        <div class="Plans_features">
+                            <div class="Cross_feature_icon" >
+                                <div class="Cross_icon_lineone"></div>
+                                <div class="Cross_icon_linetwo"></div>
+                            </div>
+                            <div class="feature_text">
+                                <p>Songs Customization</p>
+                            </div>
+                        </div>
+                          <!-- Feature Number 4  -->
+                        <div class="Plans_features">
+                            <div class="Cross_feature_icon" >
+                                <div class="Cross_icon_lineone"></div>
+                                <div class="Cross_icon_linetwo"></div>
+                            </div>
+                            <div class="feature_text">
+                                <p>Allow Pro Songs</p>
+                            </div>
+                        </div>
+                          <!-- Feature Number 5  -->
+                        <div class="Plans_features">
+                            <div class="Cross_feature_icon" >
+                                <div class="Cross_icon_lineone"></div>
+                                <div class="Cross_icon_linetwo"></div>
+                            </div>
+                            <div class="feature_text">
+                                <p>No Copyright Claim</p>
+                            </div>
+                        </div>
+                        <div class="Buy_Plan_btn">
+                            <button class="Get_free_plan_btn">Get free</button>
+                        </div>
+                    </div>
+                    <!-- ================== Standard Plan Full Box ============== -->
+                    <div class="Standard_plan_box">
+                        <!-- Heading Div  -->
+                        <div class="basic_comparison_div">
+                            <p>Standard</p>
+                        </div>
+                        <!-- Price Div  -->
+                        <div class="basic_comparison_price">
+                            <p>$ 20 / month</p>
+                        </div>
+                        <!-- Services We ARe providing  -->
+                        <!-- Feature Number 1  -->
+                        <div class="Plans_features">
+                            <div class="Plans_tik_icon">
+                                <div class="long_line_of_tik"></div>
+                                <div class="small_line_of_tik"></div>
+                            </div>
+                            <div class="feature_text">
+                                <p>Download Button Included</p>
+                            </div>
+                        </div>
+                        <!-- Feature Number 2  -->
+                        <div class="Plans_features">
+                            <div class="Cross_feature_icon">
+                                <div class="Cross_icon_lineone"></div>
+                                <div class="Cross_icon_linetwo"></div>
+                            </div>
+                            <div class="feature_text">
+                                <p>Allowed For Commercial Use</p>
+                            </div>
+                        </div>
+                          <!-- Feature Number 3  -->
+                        <div class="Plans_features">
+                            <div class="Plans_tik_icon" >
+                                <div class="long_line_of_tik"></div>
+                                <div class="small_line_of_tik"></div>
+                            </div>
+                            <div class="feature_text">
+                                <p>Songs Customization</p>
+                            </div>
+                        </div>
+                          <!-- Feature Number 4  -->
+                        <div class="Plans_features">
+                            <div class="Plans_tik_icon">
+                                <div class="long_line_of_tik"></div>
+                                <div class="small_line_of_tik"></div>
+                            </div>
+                            <div class="feature_text">
+                                <p>Allow Pro Songs</p>
+                            </div>
+                        </div>
+                          <!-- Feature Number 5  -->
+                        <div class="Plans_features">
+                            <div class="Cross_feature_icon" >
+                                <div class="Cross_icon_lineone"></div>
+                                <div class="Cross_icon_linetwo"></div>
+                            </div>
+                            <div class="feature_text">
+                                <p>No Copyright Claim</p>
+                            </div>
+                        </div>
+                        <div class="Buy_Plan_btn">
+                            <button class="standard_plan_btn">Subscribe</button>
+                        </div>
+                    </div>
+                    <!-- ================== Premium Plan Full Box ============== -->
+                    <div class="Premium_plan_box">
+                        <!-- Heading Div  -->
+                        <div class="basic_comparison_div">
+                            <p>Premium</p>
+                        </div>
+                        <!-- Price Div  -->
+                        <div class="basic_comparison_price">
+                            <p>$ 50 / month</p>
+                        </div>
+                        <!-- Services We ARe providing  -->
+                        <!-- Feature Number 1  -->
+                        <div class="Plans_features">
+                            <div class="Plans_tik_icon" >
+                                <div class="long_line_of_tik"></div>
+                                <div class="small_line_of_tik"></div>
+                            </div>
+                            <div class="feature_text">
+                                <p>Download Button Included</p>
+                            </div>
+                        </div>
+                        <!-- Feature Number 2  -->
+                        <div class="Plans_features">
+                            <div class="Plans_tik_icon">
+                                <div class="long_line_of_tik"></div>
+                                <div class="small_line_of_tik"></div>
+                            </div>
+                            <div class="feature_text">
+                                <p>Allowed For Commercial Use</p>
+                            </div>
+                        </div>
+                          <!-- Feature Number 3  -->
+                        <div class="Plans_features">
+                            <div class="Plans_tik_icon" >
+                                <div class="long_line_of_tik"></div>
+                                <div class="small_line_of_tik"></div>
+                            </div>
+                            <div class="feature_text">
+                                <p>Songs Customization</p>
+                            </div>
+                        </div>
+                          <!-- Feature Number 4  -->
+                        <div class="Plans_features">
+                            <div class="Plans_tik_icon"  >
+                                <div class="long_line_of_tik"></div>
+                                <div class="small_line_of_tik"></div>
+                            </div>
+                            <div class="feature_text">
+                                <p>Allow Pro Songs</p>
+                            </div>
+                        </div>
+                          <!-- Feature Number 5  -->
+                        <div class="Plans_features" >
+                            <div class="Plans_tik_icon"   >
+                                <div class="long_line_of_tik"></div>
+                                <div class="small_line_of_tik"></div>
+                            </div>
+                            <div class="feature_text" >
+                                <p>No Copyright Claim</p>
+                            </div>
+                        </div>
+                        <div class="Buy_Plan_btn">
+                            <button class="premium_plan_btn">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+            <!-- Comparison Section Ends Here  -->
+        <section>
+            <div class="songs_cata_container">
+                <div class="songs_cata_box">
+                    <div class="songs_cata" id="catagori1">
+                        <img src="/Images/Catagories/Sad.jpg" alt="" class="cata_bg_img" />
+                        <h5 class="catah5">Sad Songs</h5>
+                        <img src="/Images/Icons/Right_Arrow_white.png" alt="" class="cata_arrow" />
+                    </div>
+                    <div class="songs_cata" id="catagori2">
+                        <img src="/Images/Catagories/romantic.jpeg" alt="" class="cata_bg_img" />
+                        <h5 class="catah5">Romantic Songs</h5>
+                        <img src="/Images/Icons/Right_Arrow_white.png" alt="" class="cata_arrow" />
+                    </div>
+                    <div class="songs_cata" id="catagori3">
+                        <img src="/Images/Catagories/Happy_birthday.jpg" alt="" class="cata_bg_img" />
+                        <h5 class="catah5">Birthday Songs</h5>
+                        <img src="/Images/Icons/Right_Arrow_white.png" alt="" class="cata_arrow" />
+                    </div>
+                    <div class="songs_cata" id="catagori4">
+                        <img src="/Images/Catagories/Fantastic.jpg" alt="" class="cata_bg_img" />
+                        <h5 class="catah5">Funtastic Songs</h5>
+                        <img src="/Images/Icons/Right_Arrow_white.png" alt="" class="cata_arrow" />
+                    </div>
+                    <div class="songs_cata" id="catagori5">
+                        <img src="/Images/Catagories/Background_music.jpg" alt="" class="cata_bg_img" />
+                        <h5 class="catah5">Background Musics</h5>
+                        <img src="/Images/Icons/Right_Arrow_white.png" alt="" class="cata_arrow" />
+                    </div>
+                    <div class="songs_cata" id="catagori6">
+                        <img src="/Images/Catagories/Cartoonish.jpg" alt="" class="cata_bg_img" />
+                        <h5 class="catah5">Cartoonish Songs</h5>
+                        <img src="/Images/Icons/Right_Arrow_white.png" alt="" class="cata_arrow" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- JavaScript -->
+    <script src="JavaScript/Index.js"></script>
+</body>
+
+</html>
