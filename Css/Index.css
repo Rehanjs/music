@@ -179,6 +179,8 @@ html {
 }
 .side_bar_catagories .cate_para{
   margin-left: 40px;
+  color: var(--Side_nav_cata_text-);
+  text-decoration: none;
 }
 
 .side_bar_catagories:hover{
