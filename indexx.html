@@ -8,6 +8,8 @@
     <meta name="description" content="Salmon | Enjoy free music on salmon and boost your soul" />
     <link rel="shortcut icon" href="Images/Logos/Logo1.jpeg" type="image/x-icon" />
     <title>Salmon | Enjoy Free Music</title>
+    <!-- Css For Animation  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Css -->
     <link rel="stylesheet" href="Css/Index.css" />
     <link rel="stylesheet" href="Css/Media.css" />
@@ -348,7 +350,7 @@
                     <div class="seach_btn_input" id="searchbar">
                         <div class="search_div_two div_search">
                             <input type="text" class="search_input" spellcheck="false" name="search_button_info"
-                                onclick="searchhover()" placeholder="Search Salmon" id="search_bar" draggable="false" />
+                                 placeholder="Search Salmon" oninput="Search_filter()" value="this is search box" id="search_bar" draggable="false" />
                         </div>
                         <!-- Search Button  -->
                         <div class="search_btn_div">
@@ -451,7 +453,7 @@
             <div class="Plans_container">
                 <div class="Plans_div">
                     <!-- ==============================  Basic Plan  =============================== -->
-                    <div class="Basic_plan Three_plans">
+                    <div class="Basic_plan Three_plans" data-aos="fade-right" data-aos-offset="80"data-aos-delay="5"  data-aos-duration="1000"  data-aos-easing="ease"  data-aos-mirror="false"  data-aos-once="false">
                         <!-- Heading Div  -->
                         <div class="plans_heading Basic_heading">Basic</div>
                         <!-- Img Div  -->
@@ -467,7 +469,7 @@
                     </div>
                     <!-- Ends  -->
                     <!-- ==============================  Standard Plan  =============================== -->
-                    <div class="Standard_plan Three_plans">
+                    <div class="Standard_plan Three_plans" data-aos="fade" data-aos-offset="80"data-aos-delay="5"  data-aos-duration="1000"  data-aos-easing="ease"  data-aos-mirror="false"  data-aos-once="false">
                         <!-- Heading Div  -->
                         <div class="plans_heading Standard_heading">Standard</div>
                         <!-- Img Div  -->
@@ -484,7 +486,7 @@
                     </div>
                     <!-- Ends  -->
                     <!-- ==============================  Premium Plan  =============================== -->
-                    <div class="Premium_plan Three_plans">
+                    <div class="Premium_plan Three_plans" data-aos="fade-left" data-aos-offset="80"data-aos-delay="5"  data-aos-duration="1000"  data-aos-easing="ease"  data-aos-mirror="false"  data-aos-once="false">
                         <!-- Heading Div  -->
                         <div class="plans_heading Premium_heading">Premium</div>
                         <!-- Img Div  -->
@@ -511,7 +513,7 @@
             <div class="Plans_comparison_container">
                 <div class="Plans_comparison_Box">
                     <!-- ================== Basic Plan Full Box ============== -->
-                    <div class="Basic_plan_box">
+                    <div class="Basic_plan_box" data-aos="fade-right" data-aos-offset="80"data-aos-delay="5"  data-aos-duration="1000"  data-aos-easing="ease"  data-aos-mirror="false"  data-aos-once="false">
                         <!-- Heading Div  -->
                         <div class="basic_comparison_div">
                             <p>Basic</p>
@@ -576,7 +578,7 @@
                         </div>
                     </div>
                     <!-- ================== Standard Plan Full Box ============== -->
-                    <div class="Standard_plan_box">
+                    <div class="Standard_plan_box" data-aos="fade" data-aos-offset="80"data-aos-delay="5"  data-aos-duration="1000"  data-aos-easing="ease"  data-aos-mirror="false"  data-aos-once="false">
                         <!-- Heading Div  -->
                         <div class="basic_comparison_div">
                             <p>Standard</p>
@@ -592,8 +594,8 @@
                                 <div class="long_line_of_tik"></div>
                                 <div class="small_line_of_tik"></div>
                             </div>
-                            <div class="feature_text">
-                                <p>Download Button Included</p>
+                            <div class="feature_text" >
+                                <p id="feature_content">Download Button Included</p>
                             </div>
                         </div>
                         <!-- Feature Number 2  -->
@@ -641,7 +643,7 @@
                         </div>
                     </div>
                     <!-- ================== Premium Plan Full Box ============== -->
-                    <div class="Premium_plan_box">
+                    <div class="Premium_plan_box" data-aos="fade-left" data-aos-offset="80"data-aos-delay="5"  data-aos-duration="1000"  data-aos-easing="ease"  data-aos-mirror="false"  data-aos-once="false">
                         <!-- Heading Div  -->
                         <div class="basic_comparison_div">
                             <p>Premium</p>
@@ -712,32 +714,32 @@
         <section>
             <div class="songs_cata_container">
                 <div class="songs_cata_box">
-                    <div class="songs_cata" id="catagori1">
+                    <div class="songs_cata" id="catagori1" data-aos="fade-right" data-aos-offset="80"data-aos-delay="5"  data-aos-duration="1000"  data-aos-easing="ease"  data-aos-mirror="false"  data-aos-once="true">
                         <img src="/Images/Catagories/Sad.jpg" alt="" class="cata_bg_img" />
                         <h5 class="catah5">Sad Songs</h5>
                         <img src="/Images/Icons/Right_Arrow_white.png" alt="" class="cata_arrow" />
                     </div>
-                    <div class="songs_cata" id="catagori2">
+                    <div class="songs_cata" id="catagori2"   data-aos="fade-left" data-aos-offset="80"data-aos-delay="5"  data-aos-duration="1000"  data-aos-easing="ease"  data-aos-mirror="false"  data-aos-once="true">
                         <img src="/Images/Catagories/romantic.jpeg" alt="" class="cata_bg_img" />
                         <h5 class="catah5">Romantic Songs</h5>
                         <img src="/Images/Icons/Right_Arrow_white.png" alt="" class="cata_arrow" />
                     </div>
-                    <div class="songs_cata" id="catagori3">
+                    <div class="songs_cata" id="catagori3"   data-aos="fade-right" data-aos-offset="80"data-aos-delay="5"  data-aos-duration="1000"  data-aos-easing="ease"  data-aos-mirror="false"  data-aos-once="true">
                         <img src="/Images/Catagories/Happy_birthday.jpg" alt="" class="cata_bg_img" />
                         <h5 class="catah5">Birthday Songs</h5>
                         <img src="/Images/Icons/Right_Arrow_white.png" alt="" class="cata_arrow" />
                     </div>
-                    <div class="songs_cata" id="catagori4">
+                    <div class="songs_cata" id="catagori4"   data-aos="fade-left" data-aos-offset="80"data-aos-delay="5"  data-aos-duration="1000"  data-aos-easing="ease"  data-aos-mirror="false"  data-aos-once="true">
                         <img src="/Images/Catagories/Fantastic.jpg" alt="" class="cata_bg_img" />
                         <h5 class="catah5">Funtastic Songs</h5>
                         <img src="/Images/Icons/Right_Arrow_white.png" alt="" class="cata_arrow" />
                     </div>
-                    <div class="songs_cata" id="catagori5">
+                    <div class="songs_cata" id="catagori5"   data-aos="fade-right" data-aos-offset="80"data-aos-delay="5"  data-aos-duration="1000"  data-aos-easing="cubic-bezier(0, 0.83, 0.78,-0.32)"  data-aos-mirror="false"  data-aos-once="true">
                         <img src="/Images/Catagories/Background_music.jpg" alt="" class="cata_bg_img" />
                         <h5 class="catah5">Background Musics</h5>
                         <img src="/Images/Icons/Right_Arrow_white.png" alt="" class="cata_arrow" />
                     </div>
-                    <div class="songs_cata" id="catagori6">
+                    <div class="songs_cata" id="catagori6"   data-aos="fade-left" data-aos-offset="80"data-aos-delay="5"  data-aos-duration="1000"  data-aos-easing="cubic-bezier(0, 0.83, 0.78,-0.32)"  data-aos-mirror="false"  data-aos-once="true">
                         <img src="/Images/Catagories/Cartoonish.jpg" alt="" class="cata_bg_img" />
                         <h5 class="catah5">Cartoonish Songs</h5>
                         <img src="/Images/Icons/Right_Arrow_white.png" alt="" class="cata_arrow" />
@@ -750,6 +752,33 @@
 
     <!-- JavaScript -->
     <script src="JavaScript/Index.js"></script>
+    <!-- JavaScript For Animation  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+         // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+ // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+ offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 400, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+      AOS.refresh();
+    </script>
 </body>
 
 </html>
