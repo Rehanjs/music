@@ -938,38 +938,38 @@ html {
 }
 
 #trending1,#trending8{
-  background: url(/Images/Trending_songs/Bewafa_thumbnail.jpg) center/contain;
+  background: url(../Images/Trending_songs/Bewafa_thumbnail.jpg) center/contain;
   display: none;
   opacity: 0;
   background-repeat: no-repeat;
 }
 #trending2,#trending9{
-  background: url(/Images/Trending_songs/Cute_song.jpg) center/cover;
+  background: url(../Images/Trending_songs/Cute_song.jpg) center/cover;
       opacity: 0;
       display: none;
 }
 #trending3,#trending10{
-  background: url(/Images/Trending_songs/dooja_pyaar.jpg) center/cover;
+  background: url(../Images/Trending_songs/dooja_pyaar.jpg) center/cover;
       opacity: 0;
         display: none;
 }
 #trending4,#trending11{
-  background: url(/Images/Trending_songs/Humrazi.jpg) center/cover;
+  background: url(../Images/Trending_songs/Humrazi.jpg) center/cover;
       opacity: 0;
         display: none;
 }
 #trending5,#trending12{
-  background: url(/Images/Trending_songs/Kahani.jpg) center/cover;
+  background: url(../Images/Trending_songs/Kahani.jpg) center/cover;
     opacity: 0;
       display: none;
 }
 #trending6,#trending13{
-  background: url(/Images/Trending_songs/Mere_sanam.jpg) center/cover;
+  background: url(../Images/Trending_songs/Mere_sanam.jpg) center/cover;
       opacity: 0;
         display: none;
 }
 #trending7,#trending14{
-  background: url(/Images/Trending_songs/Pasoori_thumnail.jpg) center/cover;
+  background: url(../Images/Trending_songs/Pasoori_thumnail.jpg) center/cover;
       opacity: 0;
       display: none;
 }
