@@ -91,35 +91,19 @@
                   Hero Section
       ====================================*/
   .hero_background {
-    flex-wrap: wrap;
-    height: max-content;
+    height: 80vh;
     justify-content: center;
   }
   .main_heading {
     height: 180px;
-    width: 100vw;
-    margin-top: 160px;
+    width: 50vw;
+    margin-top: -110px;
   }
 
   .listen_btn_div {
     margin-top: 40px;
   }
-  .Most_viewed_div {
-    width: 100vw;
-    justify-content: center;
-    margin-right: 0px;
-  }
-  .artist {
-    width: 322px;
-    height: 33px;
-  }
-  .most_viewed_box {
-    height: 415px;
-    width: 68vw;
-    margin-right: 15px;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.6);
-  }
+
   /*===================================
                Plan Compaison Boxes
       ====================================*/
@@ -185,15 +169,35 @@
     right: 23%;
     transform: scale(0.9);
   }
-  /*===================================
-                   Tik And Cross Buttons
-      ====================================*/
-  /*===================================
-                   Side Bar
-      ====================================*/
-  /*===================================
-                   Side Bar
-      ====================================*/
+/*===================================
+              Trending Songs 
+  ====================================*/
+  .trending_box{
+    width: 52vw;
+    height: max-content;
+    border-radius: 1% 0% 0 1%;
+  }
+  .trending_songs_align{
+    height: 344px;
+  }
+  .trending_songs{
+    height: 165px;
+    width: 289px;
+  }
+/*            Overlay          */
+  .trending_song_option{
+    height: 100%;
+    width: 100%;
+  }
+
+  /* Play Button  */
+  .trending_play_btn{
+    width: 100px;
+  }
+  /* Song Name  */
+  .trending_song_name {
+    height: 45%;
+  }
 }
 @media (min-width: 801px) and (max-width: 900px) {
   :root {
@@ -293,23 +297,23 @@
                   Hero Section
       ====================================*/
   .Salmon_heading {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   .salmon_motto {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   .btn_rounded_wb {
-    font-size: 12px;
+    font-size: 15px;
     letter-spacing: 1px;
   }
   .hero_background {
     /* flex-wrap: wrap; */
-    height: 700px;
+    height: 80vh;
     justify-content: center;
   }
   .main_heading {
     height: 180px;
-    width: 100vw;
+    width: 50vw;
     margin-top: 30px;
   }
 
@@ -398,14 +402,34 @@
     transform: scale(0.9);
   }
   /*===================================
-                   Tik And Cross Buttons
-      ====================================*/
-  /*===================================
-                   Side Bar
-      ====================================*/
-  /*===================================
-                   Side Bar
-      ====================================*/
+              Trending Songs 
+  ====================================*/
+  .trending_box{
+    width: 52vw;
+    border-radius: 1% 0% 0 1%;
+  }
+  .trending_songs_align{
+    height: 344px;
+  }
+  .trending_songs{
+    height: 165px;
+    width: 289px;
+    right: 50px;
+  }
+/*            Overlay          */
+  .trending_song_option{
+    height: 100%;
+    width: 100%;
+  }
+
+  /* Play Button  */
+  .trending_play_btn{
+    width: 100px;
+  }
+  /* Song Name  */
+  .trending_song_name {
+    height: 45%;
+  }
 }
 @media (min-width: 901px) and (max-width: 1000px) {
   :root {
@@ -516,12 +540,12 @@
   }
   .hero_background {
     /* flex-wrap: wrap; */
-    height: 700px;
+    height: 80vh;
     justify-content: center;
   }
   .main_heading {
     height: 180px;
-    width: 100vw;
+    width: 50vw;
     margin-top: 30px;
   }
 
@@ -729,12 +753,12 @@
   }
   .hero_background {
     /* flex-wrap: wrap; */
-    height: 700px;
+    height: 80vh;
     justify-content: center;
   }
   .main_heading {
     height: 180px;
-    width: 100vw;
+    width: 50vw;
     margin-top: 30px;
   }
 
@@ -758,6 +782,7 @@
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.6);
   }
+
   /*===================================
                Plan Compaison Boxes
       ====================================*/
@@ -821,8 +846,21 @@
     transform: scale(0.9);
   }
   /*===================================
-                   Tik And Cross Buttons
-      ====================================*/
+              Trending Songs 
+  ====================================*/
+  .trending_songs_div{
+    width: 619px;
+  }
+  .trending_songs{
+    height: 230px;
+    width: 370px;
+    right: 50px;
+  }
+/*            Overlay          */
+  .trending_song_option{
+    height: 100%;
+    width: 100%;
+  }
   /*===================================
                    Side Bar
       ====================================*/
@@ -830,8 +868,6 @@
                    Side Bar
       ====================================*/
 }
-
-
 @media (min-width: 1101px) and (max-width: 1800px) {
   :root {
     --Side_all_categories_font_size-: 1rem;
@@ -942,12 +978,12 @@
   }
   .hero_background {
     /* flex-wrap: wrap; */
-    height: 700px;
+    height: 80vh;
     justify-content: center;
   }
   .main_heading {
     height: 180px;
-    width: 100vw;
+    width: 50vw;
     margin-top: 30px;
   }
 
@@ -969,7 +1005,6 @@
     width: 68vw;
     margin-right: 15px;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.6);
   }
   /*===================================
                Plan Compaison Boxes
