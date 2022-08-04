@@ -124,8 +124,6 @@ Hide_search = () => {
         Searchbar.style.opacity = '1';
         Searchbar.style.transition = '.1s ease';
         Searchbar.style.transitionProperty = 'opacity';
-        // Place Holder Changing Every Second 
-        change_placeholder();
     }
 
     else {
@@ -754,15 +752,23 @@ ShowHide = () => {
     // Three Details Box Variable 
     let Details_container = document.getElementById("Dots_Details_container");
     if (Side_menu.style.left == "-401vw") {
-        Side_menu.style.left = "0%";
+        setTimeout(() => {
+            Side_menu.style.left = "0%";
+        }, 1);
+        Side_menu.style.display = "block";
         Side_menu.style.transition = ".4s ease-in-out";
         cross_nav_btn.style.opacity = "1";
 
         Side_bar_overlay.classList.add('Side_menu_active_overlay');
         no_Scroll_body.style.overflowY = 'hidden';
     } else {
+        setTimeout(() => {
+         
+            Side_menu.style.display = "none";
+        }, 400);
         Side_menu.style.transition = ".6s ease-in-out";
         Side_menu.style.left = "-401vw";
+       
         // Close The Three Dots Details Box (if it is opened) when closing the side menu 
         Details_container.style.transition = '.4s ease-in-out'
         Details_container.style.opacity = '0';
@@ -803,32 +809,7 @@ Show_dots_details = () => {
     }
 }
 
-// Search Function 
-Search_filter = () => {
-    let search_box = document.getElementById("search_bar").value.toUpperCase();
-    let song11 = document.getElementById("song1");
-    let song12 = document.getElementById("song2");
-    let song13 = document.getElementById("song3");
-    let song14 = document.getElementById("song4");
-    let song15 = document.getElementById("song5");
-    let Allsongs_text = [song11, song12, song13, song14, song15];
-    let song1 = document.getElementById("song1").innerText || innerHTML;
-    let song2 = document.getElementById("song2").innerText || innerHTML;
-    let song3 = document.getElementById("song3").innerText || innerHTML;
-    let song4 = document.getElementById("song4").innerText || innerHTML;
-    let song5 = document.getElementById("song5").innerText || innerHTML;
-    let Allsongs = [song1, song2, song3, song4, song5];
-    let content = document.getElementById("feature_content").innerText.toUpperCase();
-    let textcontent = document.getElementById("feature_content");
-    console.log(content);
-    if (textcontent.toUpperCase.indexOf(search_box) > -1) {
-        song11.style.display = 'flex';
-    }
-    else {
 
-        song11.style.display = 'none';
-    }
-}
 
 // Place Holder Changing Every Second Function 
 change_placeholder = () => {
@@ -848,6 +829,7 @@ change_placeholder = () => {
     let cate_placeholder13 = 'Food';
     let cate_placeholder14 = 'Office';
     search_bar.placeholder = cate_placeholder1;
+
     setTimeout(() => { search_bar.placeholder = cate_placeholder2; }, 1200);
     setTimeout(() => { search_bar.placeholder = cate_placeholder3; }, 2200);
     setTimeout(() => { search_bar.placeholder = cate_placeholder4; }, 3200);
@@ -861,9 +843,8 @@ change_placeholder = () => {
     setTimeout(() => { search_bar.placeholder = cate_placeholder12; }, 11200);
     setTimeout(() => { search_bar.placeholder = cate_placeholder13; }, 12200);
     setTimeout(() => { search_bar.placeholder = cate_placeholder14; }, 13200);
-    console.log('its started before set interval');
-    setInterval(() => {
 
+    setInterval(() => {
         search_bar.placeholder = cate_placeholder1;
         setTimeout(() => { search_bar.placeholder = cate_placeholder2; }, 1200);
         setTimeout(() => { search_bar.placeholder = cate_placeholder3; }, 2200);
@@ -878,10 +859,10 @@ change_placeholder = () => {
         setTimeout(() => { search_bar.placeholder = cate_placeholder12; }, 11200);
         setTimeout(() => { search_bar.placeholder = cate_placeholder13; }, 12200);
         setTimeout(() => { search_bar.placeholder = cate_placeholder14; }, 13200);
-        console.log('its started After set interval');
     }, 14200);
-}
 
+}
+change_placeholder();
 // Variables 
 let trending_song_1 = document.getElementById('trending1');
 let trending_song_2 = document.getElementById('trending2');
@@ -1284,3 +1265,230 @@ let trending_options_div_array = [trending_options_div1[0],trending_options_div1
         element.style.display='none'
     }
 }
+
+
+// Audio Player JavaScript 
+// Variables 
+let Song_name = document.getElementsByClassName('Song_name')[0];
+let slider = document.getElementById('Song_input_range');
+let pause_btn = document.getElementById('Pause_btn');
+let play_btn = document.getElementById('Play_btn');
+let play_pause_div = document.getElementById('play_pause_div');
+let Song_Total_duration = document.getElementById('Total_duration');
+let Song_Current_duration = document.getElementById('Current_duration');
+let song_hover_time = document.getElementById('slider_hover_time');
+// Volume
+let current_volume = document.getElementById('current_volume');
+let Volume_input = document.getElementById('volume_input');
+let current_vol_num = document.getElementById('current_volume_num');
+// Creating Audio Element With the help of JavaScript 
+let Dewana_song = new Audio();
+let Pasoori_song = new Audio();
+let Salah_uddin = new Audio();
+let Toh_phir = new Audio();
+let Santra = new Audio();
+let Wal_khattu = new Audio();
+let Cvrtoon = new Audio();
+// Giving Source to them
+Dewana_song.src = 'Songs/Dewana.mp3';
+Pasoori_song.src = 'Songs/Pasoori.mp3';
+Salah_uddin.src = 'Songs/Salah-ud-in.mp3';
+Toh_phir.src = 'Songs/Toh_phir.mp3';
+Santra.src = 'Songs/Santra.mp3';
+Wal_khattu.src = 'Songs/wal_khattu.mp3';
+Cvrtoon.src = 'Songs/CVRTOON.mp3';
+// Creating Array of these songs to play in sequence 
+const All_songs = [Dewana_song, Pasoori_song, Salah_uddin, Toh_phir, Santra, Wal_khattu,Cvrtoon];
+const total_duration = ['4<b>:</b>14', '3<b>:</b>46', '3<b>:</b>54', '4<b>:</b>30', '0<b>:</b>36', '5<b>:</b>12', '4<b>:</b>18']
+const Song_names = ['Dewana kr rha hai','Pasoori','Salah-ud-din Ayyubi sound','Toh phir aao mugh ko stao','Cvrtoon Fired','Wal khattu husaini','CVRTOON - İzmir Marşi'];
+// Next and Previous Song Logic here 
+let i = 0;
+
+Next_song = () => {
+    i++;
+    All_songs[i].play();// Playin the next song by increasing i's value 
+    slider.max = All_songs[i].duration;// Max value of slider will be max seconds of song
+    All_songs[i].currentTime = 0;//starting from begining
+    Song_Total_duration.innerHTML = total_duration[i];
+    Song_name.innerHTML= Song_names[i];
+    Volume_change();
+    --i;
+    All_songs[i].pause();// Stoping the previous song be decreasing i's value
+    All_songs[i].currentTime = 0;//starting from begining
+    slider.value = 0;//reset the slider value
+    i++;
+    if(i==7){
+       i = 6;
+    }
+    let pre = i;
+    Previous_song = () => {
+        pre--;
+        All_songs[pre].play();//Playing the previous Song
+        slider.max = All_songs[pre].duration;// Max value of slider will be max seconds of song
+        All_songs[pre].currentTime = 0;//starting from begining
+        Song_Total_duration.innerHTML = total_duration[pre];
+        Song_name.innerHTML= Song_names[pre];
+        Volume_change();
+        ++pre;
+        All_songs[pre].pause();// Stoping the song
+        All_songs[pre].currentTime = 0;//starting from begining
+        slider.value = 0;//reset the slider value
+        pre--;
+        i = pre;// i will equal to the previous song otherwise it will skip one song
+        pause_btn.style.display = 'flex';
+        play_btn.style.display = 'none';
+    }
+   
+    pause_btn.style.display = 'flex';
+    play_btn.style.display = 'none';
+    Run_current_time();
+}
+// Ends 
+// This Function will change song seconds according to slider's value 
+Song_time_changing = () => {
+    for (element of All_songs) {
+        element.currentTime = slider.value;
+    }
+    Run_current_time();
+    Volume_change();
+}
+// Ends
+
+// Song play/pause Function/Logic
+pause_btn.style.display = 'none';//Making Condition true 
+Play_Pause_song = () => {
+    if (pause_btn.style.display == 'none') {  //if Song is Stoped
+        pause_btn.style.display = 'flex';
+        play_btn.style.display = 'none';
+        All_songs[i].play();
+        Run_current_time();
+        Volume_change();
+    }
+    else {   //if Song is Playing
+        pause_btn.style.display = 'none';
+        play_btn.style.display = 'flex';
+        All_songs[i].pause();
+    }
+}
+// Ends 
+
+// This function will Move webkit-slider-thumb when song is playing according 
+keep_runing_thumb = () => {//to the songs current time
+    if (pause_btn.style.display == 'flex') {
+        slider.value++;
+    }
+    setInterval(() => {
+        if (pause_btn.style.display == 'flex') {
+            slider.value++;
+        }
+    }, 1000)
+}
+keep_runing_thumb();
+// Ends 
+let AutoPlay = true;// Declaring AutoPlay Condition
+// This Function will show current time of song in minutes and seconds
+
+Run_current_time = () => {
+    if(pause_btn.style.display=='flex'){// Cheack if song is playing
+        setInterval(() => {
+            if(i==7){
+                i = 6;
+            }
+            let current_minutes = Math.floor(All_songs[i].currentTime / 60);
+            let current_seconds = Math.floor(All_songs[i].currentTime % 60);
+            let current_time = current_minutes+'<b>:</b>'+current_seconds;
+            if(current_seconds<10){// show a zero before seconds if less than Ten 
+                current_time = current_minutes+"<b>:</b>0"+current_seconds;
+                Song_Current_duration.innerHTML=current_time;
+            }
+            Song_Current_duration.innerHTML=current_time;// if seconds are greater than ten than this will execute
+          
+            if(AutoPlay==false){
+                Reset_the_song();
+            }
+            if(AutoPlay==true){
+                Autoplay_the_song();
+            }
+            // console.clear();
+        }, 1);
+}
+}
+
+// Ends 
+// This Function Will reset the song if it is played 
+Reset_the_song =()=>{
+    if(All_songs[i].currentTime==All_songs[i].duration){
+        play_btn.style.display='flex';
+        pause_btn.style.display='none';
+        All_songs[i].currentTime=0;
+        All_songs[i].pause();
+        slider.value=0;
+    }
+}
+Autoplay_the_song =()=>{
+    if(All_songs[i].currentTime==All_songs[i].duration){
+        All_songs[i].currentTime=0;
+        All_songs[i].play();
+        slider.value=0;
+    }
+}
+
+        // Tool Tips of playing buttons 
+Play_tool_tip = () =>{
+    if(pause_btn.style.display=='none'){
+        play_pause_div.classList.add('Play_tool_tip');
+        play_pause_div.classList.remove('Pause_tool_tip');
+    }
+    else{
+        play_pause_div.classList.remove('Play_tool_tip');
+        play_pause_div.classList.add('Pause_tool_tip');
+    }
+}
+Remove_Play_tool_tip = () =>{
+    if(pause_btn.style.display=='none'){
+        play_pause_div.classList.remove('Play_tool_tip');
+    }
+    else{
+        play_pause_div.classList.remove('Play_tool_tip');
+        play_pause_div.classList.remove('Pause_tool_tip');
+    }
+}
+play_pause_div.addEventListener('mouseover',Play_tool_tip);// Add tool tip
+play_pause_div.addEventListener('mouseout',Remove_Play_tool_tip);//Remove tool tip
+
+            // Volume Button 
+
+Volume_input.addEventListener('input',()=>{
+    current_vol_num.style.display='flex';
+    setInterval(()=>{
+        let vol_current = Volume_input.value/1.18/10+"%"
+        current_volume.style.width=vol_current;
+        if(Volume_input.value<500){
+            if(Volume_input.value<25){
+                current_vol_num.style.left=Volume_input.value/10+5+"%";
+            }
+            else{
+                current_vol_num.style.left=Volume_input.value/10+1+"%";
+            }
+        }
+        else{
+            if(Volume_input.value>75){
+                current_vol_num.style.left=Volume_input.value/10.5+"%";
+            }
+            else{
+                current_vol_num.style.left=Volume_input.value/10+"%";
+            }
+
+        }
+        current_vol_num.innerHTML=Math.floor(Volume_input.value/10);
+    },1)
+});
+Volume_input.addEventListener('mouseout',()=>{
+    current_vol_num.style.display='none';
+})
+
+// Controlling Volume from the input tag 
+Volume_input.addEventListener('mousemove',Volume_change = ()=>{
+    All_songs[i].volume=Volume_input.value/1000;
+});
+Volume_change();
