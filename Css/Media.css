@@ -6,50 +6,60 @@
   html {
     font-size: 100%;
   }
-  /*===================================
-        Hiding Navigation Bar For Pc  
-    ====================================*/
   .Navigation_options_background {
     display: none;
   }
+  .Navigation_options_background {
+    width: max-content;
+  }
+
+  .nav_container {
+    height: 62px;
+  }
+  #contact_us {
+    display: none;
+  }
+  .Nav_anchors {
+    padding: 0 12px;
+    padding-top: 15px;
+    padding-bottom: 19px;
+  }
   /*===================================
-                    Logo 
-    ====================================*/
+                        Logo 
+        ====================================*/
+
   .Logo_container {
-    max-width: 100px;
-    min-height: 60px;
+    height: 100%;
+    width: 100px;
   }
   .logo_div {
-    height: 60px;
-    width: 60px;
+    height: 100%;
   }
   .logo_img {
-    width: 80px;
+    width: 57px;
   }
   /*===================================
-                   Sign In 
-    ====================================*/
+                       Sign In 
+        ====================================*/
   .sign_in {
-    height: 40px;
-    width: 149px;
-    margin-top: 20px;
-    margin-right: 0px;
+    display: none;
   }
-  .login {
-    width: 50px;
+  .sign_inbtn {
+    font-size: 14px;
+    padding: 8px 14px;
   }
   /*===================================
                    Search Button
     ====================================*/
   .search_div {
     height: 20px;
-    margin-right: 36px;
-    width: 20px;
+    width: 115px;
     position: static;
+    margin-right: -126px;
   }
   .Search_img img {
     cursor: pointer;
-    height: 48px;
+    height: 33px;
   }
 
   /*===================================
@@ -69,17 +79,24 @@
   .search_input::placeholder {
     left: 75px;
   }
-  /* .Search_tool_tip::after {
-    display: none;
-  }
-  .Search_tool_tip::before {
-    display: none;
-  } */
   /*===================================
                  Side Menu Icon
     ====================================*/
   .Side_menu_icon {
-    right: 30px;
+    right: 40px;
+    height: 16px;
+  }
+  .Side_menu_icon::before {
+    content: "Menu";
+    width: 50px;
+    height: 19px;
+    position: absolute;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -200%;
+    top: -10%;
   }
   /*===================================
                  Side Bar
@@ -173,7 +190,7 @@
     right: 23%;
     transform: scale(0.9);
   }
- /*===================================
+  /*===================================
               Trending Songs 
   ====================================*/
   .Trending_Container {
@@ -184,34 +201,34 @@
     align-items: center;
     margin-top: 100px;
   }
-  .trending_box{
+  .trending_box {
     width: 92vw;
     border-radius: 1%;
     height: max-content;
     margin-right: 17px;
   }
-  .trending_songs_align{
+  .trending_songs_align {
     height: 520px;
   }
-  .trending_songs{
+  .trending_songs {
     height: 280px;
     width: 75vw;
   }
-  .trending_heading_div{
+  .trending_heading_div {
     height: 300px;
   }
-  .trending_dots_align{
+  .trending_dots_align {
     height: 57px;
     margin-top: 30px;
   }
-/*            Overlay          */
-  .trending_song_option{
+  /*            Overlay          */
+  .trending_song_option {
     height: 100%;
     width: 100%;
   }
 
   /* Play Button  */
-  .trending_play_btn{
+  .trending_play_btn {
     width: 100px;
   }
   /* Song Name  */
@@ -233,44 +250,53 @@
   .Navigation_options_background {
     display: none;
   }
+  .nav_container {
+    height: 62px;
+  }
+  #contact_us {
+    display: none;
+  }
+  .Nav_anchors {
+    padding: 0 12px;
+    padding-top: 15px;
+    padding-bottom: 19px;
+  }
   /*===================================
-                    Logo 
-    ====================================*/
+                        Logo 
+        ====================================*/
+
   .Logo_container {
-    max-width: 100px;
-    min-height: 60px;
+    height: 100%;
+    width: 100px;
   }
   .logo_div {
-    height: 60px;
-    width: 60px;
+    height: 100%;
   }
   .logo_img {
-    width: 80px;
+    width: 57px;
   }
   /*===================================
-                   Sign In 
-    ====================================*/
+                       Sign In 
+        ====================================*/
   .sign_in {
-    height: 40px;
-    width: 149px;
-    margin-top: 20px;
-    margin-right: 0px;
+    display: none;
   }
-  .login {
-    width: 50px;
+  .sign_inbtn {
+    font-size: 14px;
+    padding: 8px 14px;
   }
   /*===================================
                    Search Button
     ====================================*/
   .search_div {
     height: 20px;
-    margin-right: 36px;
-    width: 20px;
+    width: 115px;
     position: static;
+    margin-right: -66px;
   }
   .Search_img img {
     cursor: pointer;
-    height: 48px;
+    height: 33px;
   }
 
   /*===================================
@@ -290,17 +316,24 @@
   .search_input::placeholder {
     left: 75px;
   }
-  /* .Search_tool_tip::after {
-    display: none;
-  }
-  .Search_tool_tip::before {
-    display: none;
-  } */
   /*===================================
                  Side Menu Icon
     ====================================*/
   .Side_menu_icon {
-    right: 30px;
+    right: 40px;
+    height: 16px;
+  }
+  .Side_menu_icon::before {
+    content: "Menu";
+    width: 50px;
+    height: 19px;
+    position: absolute;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -200%;
+    top: -10%;
   }
   /*===================================
                  Side Bar
@@ -384,7 +417,7 @@
     right: 23%;
     transform: scale(0.9);
   }
- /*===================================
+  /*===================================
               Trending Songs 
   ====================================*/
   .Trending_Container {
@@ -395,34 +428,34 @@
     align-items: center;
     margin-top: 100px;
   }
-  .trending_box{
+  .trending_box {
     width: 92vw;
     border-radius: 1%;
     margin-right: 17px;
     height: max-content;
   }
-  .trending_songs_align{
+  .trending_songs_align {
     height: 520px;
   }
-  .trending_songs{
+  .trending_songs {
     height: 260px;
     width: 80vw;
   }
-  .trending_heading_div{
+  .trending_heading_div {
     height: 300px;
   }
-  .trending_dots_align{
+  .trending_dots_align {
     height: 57px;
     margin-top: 30px;
   }
-/*            Overlay          */
-  .trending_song_option{
+  /*            Overlay          */
+  .trending_song_option {
     height: 100%;
     width: 100%;
   }
 
   /* Play Button  */
-  .trending_play_btn{
+  .trending_play_btn {
     width: 100px;
   }
   /* Song Name  */
@@ -444,45 +477,55 @@
   .Navigation_options_background {
     display: none;
   }
+  .nav_container {
+    height: 62px;
+  }
+  #contact_us {
+    display: none;
+  }
+  .Nav_anchors {
+    padding: 0 12px;
+    padding-top: 15px;
+    padding-bottom: 19px;
+  }
   /*===================================
-                    Logo 
-    ====================================*/
+                        Logo 
+        ====================================*/
+
   .Logo_container {
-    max-width: 100px;
-    min-height: 60px;
+    height: 100%;
+    width: 100px;
   }
   .logo_div {
-    height: 60px;
-    width: 60px;
+    height: 100%;
   }
   .logo_img {
-    width: 70px;
+    width: 57px;
   }
   /*===================================
-                   Sign In 
-    ====================================*/
+                       Sign In 
+        ====================================*/
   .sign_in {
-    height: 40px;
-    width: 149px;
-    margin-top: 0px;
-    margin-right: 0px;
+    display: none;
   }
-  .login {
-    width: 40px;
+  .sign_inbtn {
+    font-size: 14px;
+    padding: 8px 14px;
   }
   /*===================================
                    Search Button
     ====================================*/
   .search_div {
     height: 20px;
-    margin-right: 36px;
-    width: 20px;
+    width: 115px;
     position: static;
+    margin-right: -26px;
   }
   .Search_img img {
     cursor: pointer;
-    height: 38px;
+    height: 33px;
   }
+
   /*===================================
                 Search Input Tag
     ====================================*/
@@ -500,17 +543,24 @@
   .search_input::placeholder {
     left: 75px;
   }
-  .Search_tool_tip::after {
-    display: none;
-  }
-  .Search_tool_tip::before {
-    display: none;
-  }
   /*===================================
                  Side Menu Icon
     ====================================*/
   .Side_menu_icon {
-    right: 30px;
+    right: 40px;
+    height: 16px;
+  }
+  .Side_menu_icon::before {
+    content: "Menu";
+    width: 50px;
+    height: 19px;
+    position: absolute;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -200%;
+    top: -10%;
   }
   /*===================================
                  Side Bar
@@ -599,7 +649,7 @@
     right: 23%;
     transform: scale(0.9);
   }
- /*===================================
+  /*===================================
               Trending Songs 
   ====================================*/
   .Trending_Container {
@@ -610,34 +660,34 @@
     align-items: center;
     margin-top: 100px;
   }
-  .trending_box{
+  .trending_box {
     width: 100vw;
     border-radius: 1%;
     height: max-content;
   }
-  .trending_songs_align{
+  .trending_songs_align {
     height: 520px;
     margin-right: 20px;
   }
-  .trending_songs{
+  .trending_songs {
     height: 260px;
     width: 90vw;
   }
-  .trending_heading_div{
+  .trending_heading_div {
     height: 300px;
   }
-  .trending_dots_align{
+  .trending_dots_align {
     height: 57px;
     margin-top: 30px;
   }
-/*            Overlay          */
-  .trending_song_option{
+  /*            Overlay          */
+  .trending_song_option {
     height: 100%;
     width: 100%;
   }
 
   /* Play Button  */
-  .trending_play_btn{
+  .trending_play_btn {
     width: 100px;
   }
   /* Song Name  */
@@ -659,45 +709,55 @@
   .Navigation_options_background {
     display: none;
   }
+  .nav_container {
+    height: 62px;
+  }
+  #contact_us {
+    display: none;
+  }
+  .Nav_anchors {
+    padding: 0 12px;
+    padding-top: 15px;
+    padding-bottom: 19px;
+  }
   /*===================================
-                    Logo 
-    ====================================*/
+                        Logo 
+        ====================================*/
+
   .Logo_container {
-    max-width: 100px;
-    min-height: 60px;
+    height: 100%;
+    width: 100px;
   }
   .logo_div {
-    height: 60px;
-    width: 60px;
+    height: 100%;
   }
   .logo_img {
-    width: 70px;
+    width: 57px;
   }
   /*===================================
-                   Sign In 
-    ====================================*/
+                       Sign In 
+        ====================================*/
   .sign_in {
-    height: 40px;
-    width: 40px;
-    margin-top: 0px;
-    margin-right: 0px;
+    display: none;
   }
-  .login {
-    width: 40px;
+  .sign_inbtn {
+    font-size: 14px;
+    padding: 8px 14px;
   }
   /*===================================
                    Search Button
     ====================================*/
   .search_div {
     height: 20px;
-    margin-right: 36px;
-    width: 20px;
+    width: 115px;
     position: static;
+    margin-right: 10px;
   }
   .Search_img img {
     cursor: pointer;
-    height: 38px;
+    height: 33px;
   }
+
   /*===================================
                 Search Input Tag
     ====================================*/
@@ -715,17 +775,24 @@
   .search_input::placeholder {
     left: 75px;
   }
-  .Search_tool_tip::after {
-    display: none;
-  }
-  .Search_tool_tip::before {
-    display: none;
-  }
   /*===================================
                  Side Menu Icon
     ====================================*/
   .Side_menu_icon {
-    right: 30px;
+    right: 40px;
+    height: 16px;
+  }
+  .Side_menu_icon::before {
+    content: "Menu";
+    width: 50px;
+    height: 19px;
+    position: absolute;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -200%;
+    top: -10%;
   }
   /*===================================
                  Side Bar
@@ -807,7 +874,7 @@
     right: 23%;
     transform: scale(0.9);
   }
- /*===================================
+  /*===================================
               Trending Songs 
   ====================================*/
   .Trending_Container {
@@ -818,60 +885,73 @@
     align-items: center;
     margin-top: 100px;
   }
-  .trending_box{
+  .trending_box {
     width: 100vw;
     border-radius: 1%;
     height: max-content;
   }
-  .trending_songs_align{
+  .trending_songs_align {
     height: 370px;
     margin-right: 20px;
   }
-  .trending_songs{
+  .trending_songs {
     height: 182px;
     width: 80vw;
   }
-  #trending1,#trending8{
+  #trending1,
+  #trending8 {
     height: 166px;
   }
-  #trending2,#trending9{
-    background: url(/Images/Trending_songs//Mobile/Cute_song_small.jpg) center no-repeat;
+  #trending2,
+  #trending9 {
+    background: url(/Images/Trending_songs//Mobile/Cute_song_small.jpg) center
+      no-repeat;
   }
-  #trending3,#trending10{
-    background: url(/Images/Trending_songs/Mobile/dooja_pyaar_small.jpg) center no-repeat;
+  #trending3,
+  #trending10 {
+    background: url(/Images/Trending_songs/Mobile/dooja_pyaar_small.jpg) center
+      no-repeat;
   }
-  #trending4,#trending11{
-    background: url(/Images/Trending_songs/Mobile/Humrazi_small.jpg) center no-repeat;
+  #trending4,
+  #trending11 {
+    background: url(/Images/Trending_songs/Mobile/Humrazi_small.jpg) center
+      no-repeat;
   }
-  #trending5,#trending12{
-    background: url(/Images/Trending_songs/Mobile/Kahani_small.jpg) center no-repeat;
+  #trending5,
+  #trending12 {
+    background: url(/Images/Trending_songs/Mobile/Kahani_small.jpg) center
+      no-repeat;
   }
-  #trending6,#trending13{
-    background: url(/Images/Trending_songs/Mobile/Mere_sanam_small.jpg) center no-repeat;
+  #trending6,
+  #trending13 {
+    background: url(/Images/Trending_songs/Mobile/Mere_sanam_small.jpg) center
+      no-repeat;
   }
-  #trending7,#trending14{
-    background: url(/Images/Trending_songs/Mobile/Pasoori_small.jpg) center no-repeat;
+  #trending7,
+  #trending14 {
+    background: url(/Images/Trending_songs/Mobile/Pasoori_small.jpg) center
+      no-repeat;
   }
- 
-  .trending_heading_div{
+
+  .trending_heading_div {
     height: 300px;
   }
-  .trending_dots_align{
+  .trending_dots_align {
     height: 57px;
     margin-top: 30px;
   }
-/*            Overlay          */
-  .trending_song_option{
+  /*            Overlay          */
+  .trending_song_option {
     height: 100%;
     width: 100%;
   }
 
   /* Play Button  */
-  .trending_play_btn{
+  .trending_play_btn {
     width: 80px;
     height: 30px;
   }
-  .Play-trend{
+  .Play-trend {
     height: 44%;
   }
   /* Song Name  */
@@ -922,54 +1002,52 @@
   .Navigation_options_background {
     display: none;
   }
+  .nav_container {
+    height: 62px;
+  }
+  .Nav_anchors {
+    padding: 0 12px;
+    padding-top: 15px;
+    padding-bottom: 19px;
+  }
   /*===================================
-                    Logo 
-    ====================================*/
+                        Logo 
+        ====================================*/
+
   .Logo_container {
-    max-width: 100px;
-    min-height: 60px;
+    height: 100%;
+    width: 70px;
   }
   .logo_div {
-    height: 60px;
-    width: 60px;
+    height: 100%;
   }
   .logo_img {
-    width: 59px;
+    width: 57px;
   }
   /*===================================
-                   Sign In 
-    ====================================*/
+                       Sign In 
+        ====================================*/
   .sign_in {
-    height: 40px;
-    width: 40px;
-    margin-top: 0px;
-    margin-right: 0px;
+    display: none;
   }
-  .Sign_in_btn {
-    padding: 8px 16%;
-  }
-  .login {
-    width: 30px;
-  }
-  /*===================================
-          Dots Details Container
-    ====================================*/
-  .dots_Details_cont {
-    width: 65vw;
+  .sign_inbtn {
+    font-size: 14px;
+    padding: 8px 14px;
   }
   /*===================================
                    Search Button
     ====================================*/
   .search_div {
     height: 20px;
-    margin-right: 66px;
-    width: 20px;
+    width: 115px;
     position: static;
+    margin-right: 26px;
   }
   .Search_img img {
     cursor: pointer;
-    height: 38px;
+    height: 33px;
   }
+
   /*===================================
                 Search Input Tag
     ====================================*/
@@ -987,17 +1065,24 @@
   .search_input::placeholder {
     left: 75px;
   }
-  .Search_tool_tip::after {
-    display: none;
-  }
-  .Search_tool_tip::before {
-    display: none;
-  }
   /*===================================
                  Side Menu Icon
     ====================================*/
   .Side_menu_icon {
-    right: 30px;
+    right: 22px;
+    height: 16px;
+  }
+  .Side_menu_icon::before {
+    content: "Menu";
+    width: 50px;
+    height: 19px;
+    position: absolute;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -200%;
+    top: -10%;
   }
   /*===================================
                  Side Bar
@@ -1050,10 +1135,10 @@
     margin-right: 8px;
     height: 229px;
   }
- .Plans_div {
-  height: max-content;
-  margin-top: 200px;
- }
+  .Plans_div {
+    height: max-content;
+    margin-top: 200px;
+  }
   .Premium_plan_imgs {
     margin-right: 0px;
   }
@@ -1110,72 +1195,85 @@
     align-items: center;
     margin-top: 100px;
   }
-  .trending_box{
+  .trending_box {
     width: 100vw;
     border-radius: 1%;
     height: max-content;
   }
-  .trending_songs_align{
+  .trending_songs_align {
     height: 308px;
     margin-right: 20px;
   }
-  .trending_songs{
+  .trending_songs {
     height: 182px;
     width: 90vw;
   }
-  #trending1,#trending8{
+  #trending1,
+  #trending8 {
     height: 150px;
   }
-  #trending2,#trending9{
-    background: url(/Images/Trending_songs//Mobile/Cute_song_small.jpg) center no-repeat;
+  #trending2,
+  #trending9 {
+    background: url(/Images/Trending_songs//Mobile/Cute_song_small.jpg) center
+      no-repeat;
   }
-  #trending3,#trending10{
-    background: url(/Images/Trending_songs/Mobile/dooja_pyaar_small.jpg) center no-repeat;
+  #trending3,
+  #trending10 {
+    background: url(/Images/Trending_songs/Mobile/dooja_pyaar_small.jpg) center
+      no-repeat;
   }
-  #trending4,#trending11{
-    background: url(/Images/Trending_songs/Mobile/Humrazi_small.jpg) center no-repeat;
+  #trending4,
+  #trending11 {
+    background: url(/Images/Trending_songs/Mobile/Humrazi_small.jpg) center
+      no-repeat;
   }
-  #trending5,#trending12{
-    background: url(/Images/Trending_songs/Mobile/Kahani_small.jpg) center no-repeat;
+  #trending5,
+  #trending12 {
+    background: url(/Images/Trending_songs/Mobile/Kahani_small.jpg) center
+      no-repeat;
   }
-  #trending6,#trending13{
-    background: url(/Images/Trending_songs/Mobile/Mere_sanam_small.jpg) center no-repeat;
+  #trending6,
+  #trending13 {
+    background: url(/Images/Trending_songs/Mobile/Mere_sanam_small.jpg) center
+      no-repeat;
   }
-  #trending7,#trending14{
-    background: url(/Images/Trending_songs/Mobile/Pasoori_small.jpg) center no-repeat;
+  #trending7,
+  #trending14 {
+    background: url(/Images/Trending_songs/Mobile/Pasoori_small.jpg) center
+      no-repeat;
   }
- 
-  .trending_heading_div{
+
+  .trending_heading_div {
     height: 300px;
   }
-  .trending_dots_align{
+  .trending_dots_align {
     height: 57px;
     margin-top: 6px;
     width: 150px;
   }
-  .navigate_trending_songs{
+  .navigate_trending_songs {
     height: 20%;
     width: 130px;
   }
-  .trending_songs_dots{
+  .trending_songs_dots {
     width: 12px;
     height: 12px;
     cursor: pointer;
     border-radius: 50%;
     background-color: white;
   }
-/*            Overlay          */
-  .trending_song_option{
+  /*            Overlay          */
+  .trending_song_option {
     height: 100%;
     width: 100%;
   }
 
   /* Play Button  */
-  .trending_play_btn{
+  .trending_play_btn {
     width: 80px;
     height: 30px;
   }
-  .Play-trend{
+  .Play-trend {
     height: 44%;
   }
   /* Song Name  */
@@ -1183,7 +1281,6 @@
     height: 55%;
     font-size: 1.4rem;
   }
- 
 }
 @media (min-width: 0px) and (max-width: 200px) {
   :root {
@@ -1330,10 +1427,10 @@
     margin-right: 8px;
     height: 229px;
   }
- .Plans_div {
-  height: max-content;
-  margin-top: 200px;
- }
+  .Plans_div {
+    height: max-content;
+    margin-top: 200px;
+  }
   .Premium_plan_imgs {
     margin-right: 0px;
   }
@@ -1390,75 +1487,89 @@
     align-items: center;
     margin-top: 100px;
   }
-  .trending_box{
+  .trending_box {
     width: 100vw;
     border-radius: 1%;
     height: max-content;
   }
-  .trending_songs_align{
+  .trending_songs_align {
     height: 378px;
     margin-right: 20px;
   }
-  .trending_songs{
+  .trending_songs {
     height: 162px;
     width: 90vw;
   }
-  #trending1,#trending8{
+  #trending1,
+  #trending8 {
     height: 180px;
   }
-  #trending1,#trending8{
+  #trending1,
+  #trending8 {
     background: url(/Images/Trending_songs/Bewafa_thumbnail.jpg) center/cover;
   }
-  #trending2,#trending9{
-    background: url(/Images/Trending_songs//Mobile/Cute_song_small.jpg) center no-repeat;
+  #trending2,
+  #trending9 {
+    background: url(/Images/Trending_songs//Mobile/Cute_song_small.jpg) center
+      no-repeat;
   }
-  #trending3,#trending10{
-    background: url(/Images/Trending_songs/Mobile/dooja_pyaar_small.jpg) center no-repeat;
+  #trending3,
+  #trending10 {
+    background: url(/Images/Trending_songs/Mobile/dooja_pyaar_small.jpg) center
+      no-repeat;
   }
-  #trending4,#trending11{
-    background: url(/Images/Trending_songs/Mobile/Humrazi_small.jpg) center no-repeat;
+  #trending4,
+  #trending11 {
+    background: url(/Images/Trending_songs/Mobile/Humrazi_small.jpg) center
+      no-repeat;
   }
-  #trending5,#trending12{
-    background: url(/Images/Trending_songs/Mobile/Kahani_small.jpg) center no-repeat;
+  #trending5,
+  #trending12 {
+    background: url(/Images/Trending_songs/Mobile/Kahani_small.jpg) center
+      no-repeat;
   }
-  #trending6,#trending13{
-    background: url(/Images/Trending_songs/Mobile/Mere_sanam_small.jpg) center no-repeat;
+  #trending6,
+  #trending13 {
+    background: url(/Images/Trending_songs/Mobile/Mere_sanam_small.jpg) center
+      no-repeat;
   }
-  #trending7,#trending14{
-    background: url(/Images/Trending_songs/Mobile/Pasoori_small.jpg) center no-repeat;
+  #trending7,
+  #trending14 {
+    background: url(/Images/Trending_songs/Mobile/Pasoori_small.jpg) center
+      no-repeat;
   }
- 
-  .trending_heading_div{
+
+  .trending_heading_div {
     height: 300px;
   }
-  .trending_dots_align{
+  .trending_dots_align {
     height: 57px;
     margin-top: -6px;
     width: 150px;
   }
-  .navigate_trending_songs{
+  .navigate_trending_songs {
     height: 20%;
     width: 130px;
   }
-  .trending_songs_dots{
+  .trending_songs_dots {
     width: 12px;
     height: 12px;
     cursor: pointer;
     border-radius: 50%;
     background-color: white;
   }
-/*            Overlay          */
-  .trending_song_option{
+  /*            Overlay          */
+  .trending_song_option {
     height: 100%;
     width: 100%;
   }
 
   /* Play Button  */
-  .trending_play_btn{
+  .trending_play_btn {
     width: 80px;
     height: 30px;
   }
-  .Play-trend{
+  .Play-trend {
     height: 44%;
   }
   /* Song Name  */
@@ -1466,5 +1577,4 @@
     height: 55%;
     font-size: 1rem;
   }
- 
 }
