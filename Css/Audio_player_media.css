@@ -1,0 +1,24 @@
+@media(min-width:130px) and (max-width:1130px){
+    .Audio_Player_container{
+        height: 200px;
+    }
+    .Audio_player_box{
+        position: relative;
+    }
+ .song_plus_name{
+    position: absolute;
+    left: 0;
+    bottom: 0%;
+ }
+ .Audio_player_playing_section{
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+ }
+ .Audio_player_volume_Section{
+    position: absolute;
+    right: 0;
+    bottom: 0%;
+ }
+}
